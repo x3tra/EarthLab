@@ -1,0 +1,2549 @@
+{
+  "generated_at": "2026-11-09T10:15:21.878890+00:00",
+  "catalog_product_count": 193,
+  "catalog_endpoint": "https://appeears.earthdatacloud.nasa.gov/api/product",
+  "datasets": [
+    {
+      "dataset": "HLSL30",
+      "status": "available",
+      "requested_product_ids": [
+        "HLSL30.020"
+      ],
+      "available_product_ids": [
+        "HLSL30.020"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "HLSL30.020",
+          "checks": [
+            {
+              "requested_layer": "B03",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B03",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B03 - Green (0.53 – 0.59 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B03",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSL30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B04",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B04",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B04 - Red (0.64 – 0.67 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B04",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSL30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B05",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B05",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B05 - NIR (0.85 – 0.88 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B05",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSL30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B06",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B06",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B06 - SWIR1 (1.57 – 1.65 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B06",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSL30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B07",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B07",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B07 - SWIR2 (2.11 – 2.29 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B07",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSL30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "Fmask",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "Fmask",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "uint8",
+                  "Description": "Quality Bits",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": true,
+                  "Layer": "Fmask",
+                  "OrigDataType": "uint8",
+                  "OrigValidMax": 255.0,
+                  "OrigValidMin": 0.0,
+                  "QualityLayers": "",
+                  "QualityProductAndVersion": "",
+                  "ScaleFactor": "",
+                  "Units": "Bit Field",
+                  "ValidMax": 255.0,
+                  "ValidMin": 0.0,
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {}
+    },
+    {
+      "dataset": "HLSS30",
+      "status": "available",
+      "requested_product_ids": [
+        "HLSS30.020"
+      ],
+      "available_product_ids": [
+        "HLSS30.020"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "HLSS30.020",
+          "checks": [
+            {
+              "requested_layer": "B03",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B03",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B03 - Green (0.53 – 0.59 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B03",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSS30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B04",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B04",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B04 - Red (0.64 – 0.67 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B04",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSS30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B05",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B05",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B05 - Red Edge1 (0.69 – 0.71 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B05",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSS30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B06",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B06",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B06 - Red Edge2 (0.73 – 0.75 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B06",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSS30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "B07",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "B07",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "B07 - Red Edge3 (0.77 – 0.79 µm)",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "B07",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['Fmask']",
+                  "QualityProductAndVersion": "HLSS30.020",
+                  "ScaleFactor": 0.0001,
+                  "Units": "Reflectance",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "Fmask",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "Fmask",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "uint8",
+                  "Description": "Quality Bits",
+                  "Dimensions": [
+                    "time",
+                    "y",
+                    "x"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": true,
+                  "Layer": "Fmask",
+                  "OrigDataType": "uint8",
+                  "OrigValidMax": 255.0,
+                  "OrigValidMin": 0.0,
+                  "QualityLayers": "",
+                  "QualityProductAndVersion": "",
+                  "ScaleFactor": "",
+                  "Units": "Bit Field",
+                  "ValidMax": 255.0,
+                  "ValidMin": 0.0,
+                  "XSize": 3660,
+                  "YSize": 3660
+                }
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {}
+    },
+    {
+      "dataset": "MOD13Q1",
+      "status": "available",
+      "requested_product_ids": [
+        "MOD13Q1.061"
+      ],
+      "available_product_ids": [
+        "MOD13Q1.061"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "MOD13Q1.061",
+          "checks": [
+            {
+              "requested_layer": "NDVI",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "_250m_16_days_NDVI",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "16 day NDVI average",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": -3000,
+                  "FillValueAll": [
+                    -3000
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "_250m_16_days_NDVI",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": 10000,
+                  "OrigValidMin": -2000,
+                  "QualityLayers": "['_250m_16_days_VI_Quality']",
+                  "QualityProductAndVersion": "MOD13Q1.061",
+                  "ScaleFactor": 0.0001,
+                  "Units": "NDVI",
+                  "ValidMax": 1.0,
+                  "ValidMin": -0.200000003,
+                  "XSize": 4800,
+                  "YSize": 4800
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "EVI",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "_250m_16_days_EVI",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "16 day EVI average",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": -3000,
+                  "FillValueAll": [
+                    -3000
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "_250m_16_days_EVI",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": 10000,
+                  "OrigValidMin": -2000,
+                  "QualityLayers": "['_250m_16_days_VI_Quality']",
+                  "QualityProductAndVersion": "MOD13Q1.061",
+                  "ScaleFactor": 0.0001,
+                  "Units": "EVI",
+                  "ValidMax": 1.0,
+                  "ValidMin": -0.200000003,
+                  "XSize": 4800,
+                  "YSize": 4800
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "DetailedQA",
+              "status": "unavailable",
+              "matched_layers": [],
+              "reason": "No matching layer identifier or description in the API metadata."
+            },
+            {
+              "requested_layer": "SummaryQA",
+              "status": "unavailable",
+              "matched_layers": [],
+              "reason": "No matching layer identifier or description in the API metadata."
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {
+        "MOD13Q1.061": {
+          "quality_flag_candidates": [
+            {
+              "layer_id": "_250m_16_days_VI_Quality",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "250m 16 days VI Quality",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 65535,
+              "FillValueAll": [
+                65535
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": true,
+              "Layer": "_250m_16_days_VI_Quality",
+              "OrigDataType": "uint16",
+              "OrigValidMax": 65534,
+              "OrigValidMin": 0,
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 65534.0,
+              "ValidMin": 0.0,
+              "XSize": 4800,
+              "YSize": 4800
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "MCD15A3H",
+      "status": "available",
+      "requested_product_ids": [
+        "MCD15A3H.061"
+      ],
+      "available_product_ids": [
+        "MCD15A3H.061"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "MCD15A3H.061",
+          "checks": [
+            {
+              "requested_layer": "LAI",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "Lai_500m",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "Leaf area index",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "Lai_500m",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 100,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+                  "QualityProductAndVersion": "MCD15A3H.061",
+                  "ScaleFactor": 0.1,
+                  "Units": "m^2/m^2",
+                  "ValidMax": 10.0,
+                  "ValidMin": 0.0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "FPAR",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "Fpar_500m",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "Fraction of photosynthetically active radiation",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    249,
+                    250,
+                    251,
+                    252,
+                    253,
+                    254,
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "Fpar_500m",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 100,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+                  "QualityProductAndVersion": "MCD15A3H.061",
+                  "ScaleFactor": 0.01,
+                  "Units": "Percent",
+                  "ValidMax": 1.0,
+                  "ValidMin": 0.0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "FparLai_QC",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "FparLai_QC",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Quality for Lai and Fpar",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": true,
+                  "Layer": "FparLai_QC",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 254,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "",
+                  "QualityProductAndVersion": "",
+                  "ScaleFactor": "",
+                  "Units": "class-flag",
+                  "ValidMax": 254.0,
+                  "ValidMin": 0.0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {}
+    },
+    {
+      "dataset": "MOD11A2",
+      "status": "available",
+      "requested_product_ids": [
+        "MOD11A2.061"
+      ],
+      "available_product_ids": [
+        "MOD11A2.061"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "MOD11A2.061",
+          "checks": [
+            {
+              "requested_layer": "LST_Day_1km",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "LST_Day_1km",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "Day Land Surface Temperature",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 0,
+                  "FillValueAll": [
+                    0
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "LST_Day_1km",
+                  "OrigDataType": "uint16",
+                  "OrigValidMax": 65535,
+                  "OrigValidMin": 7500,
+                  "QualityLayers": "['QC_Day']",
+                  "QualityProductAndVersion": "MOD11A2.061",
+                  "ScaleFactor": 0.02,
+                  "Units": "Kelvin",
+                  "ValidMax": 1310.699951,
+                  "ValidMin": 150.0,
+                  "XSize": 1200,
+                  "YSize": 1200
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "LST_Night_1km",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "LST_Night_1km",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "Night Land Surface Temperature",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 0,
+                  "FillValueAll": [
+                    0
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "LST_Night_1km",
+                  "OrigDataType": "uint16",
+                  "OrigValidMax": 65535,
+                  "OrigValidMin": 7500,
+                  "QualityLayers": "['QC_Night']",
+                  "QualityProductAndVersion": "MOD11A2.061",
+                  "ScaleFactor": 0.02,
+                  "Units": "Kelvin",
+                  "ValidMax": 1310.699951,
+                  "ValidMin": 150.0,
+                  "XSize": 1200,
+                  "YSize": 1200
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "QC_Day",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "QC_Day",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Daytime LST Quality Indicators",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 0,
+                  "FillValueAll": [
+                    0
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": true,
+                  "Layer": "QC_Day",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 255,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "",
+                  "QualityProductAndVersion": "",
+                  "ScaleFactor": "",
+                  "Units": "Bit Field",
+                  "ValidMax": 255.0,
+                  "ValidMin": 0.0,
+                  "XSize": 1200,
+                  "YSize": 1200
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "QC_Night",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "QC_Night",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Nighttime LST Quality indicators",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 0,
+                  "FillValueAll": [
+                    0
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": true,
+                  "Layer": "QC_Night",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 255,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "",
+                  "QualityProductAndVersion": "",
+                  "ScaleFactor": "",
+                  "Units": "Bit Field",
+                  "ValidMax": 255.0,
+                  "ValidMin": 0.0,
+                  "XSize": 1200,
+                  "YSize": 1200
+                }
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {}
+    },
+    {
+      "dataset": "MOD16A2GF",
+      "status": "available",
+      "requested_product_ids": [
+        "MOD16A2GF.061"
+      ],
+      "available_product_ids": [
+        "MOD16A2GF.061"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "MOD16A2GF.061",
+          "checks": [
+            {
+              "requested_layer": "ET_500m",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "ET_500m",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "Total Evapotranspiration",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 32767,
+                  "FillValueAll": [
+                    32761,
+                    32762,
+                    32763,
+                    32764,
+                    32765,
+                    32766,
+                    32767
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "ET_500m",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": 32700,
+                  "OrigValidMin": -32767,
+                  "QualityLayers": "['ET_QC_500m']",
+                  "QualityProductAndVersion": "MOD16A2GF.061",
+                  "ScaleFactor": 0.1,
+                  "Units": "kg/m^2/8day",
+                  "ValidMax": 3270.0,
+                  "ValidMin": -3276.699951,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "PET_500m",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "PET_500m",
+                  "AddOffset": 0.0,
+                  "Available": true,
+                  "DataType": "float32",
+                  "Description": "Total Potential Evapotranspiration",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 32767,
+                  "FillValueAll": [
+                    32761,
+                    32762,
+                    32763,
+                    32764,
+                    32765,
+                    32766,
+                    32767
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "PET_500m",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": 32700,
+                  "OrigValidMin": -32767,
+                  "QualityLayers": "['ET_QC_500m']",
+                  "QualityProductAndVersion": "MOD16A2GF.061",
+                  "ScaleFactor": 0.1,
+                  "Units": "kg/m^2/8day",
+                  "ValidMax": 3270.0,
+                  "ValidMin": -3276.699951,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "ET_QC_500m",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "ET_QC_500m",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Evapotranspiration Quality Control flags",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": true,
+                  "Layer": "ET_QC_500m",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 254,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "",
+                  "QualityProductAndVersion": "",
+                  "ScaleFactor": "",
+                  "Units": "Bit Field",
+                  "ValidMax": 254.0,
+                  "ValidMin": 0.0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {}
+    },
+    {
+      "dataset": "SMAP",
+      "status": "available",
+      "requested_product_ids": [],
+      "available_product_ids": [
+        "SPL3SMP_E.006",
+        "SPL3SMP.009"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [],
+      "discovered_layer_categories": {
+        "SPL3SMP_E.006": {
+          "surface_soil_moisture_candidates": [
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_soil_moisture",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "soil_moisture"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_soil_moisture",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag']",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_soil_moisture_scav",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "soil_moisture_scav"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_soil_moisture_scav",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scav']",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "soil_moisture_pm"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_pm",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_pm']",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_scav_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "soil_moisture_scav_pm"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_scav_pm",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scav_pm']",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 3856,
+              "YSize": 1624
+            }
+          ],
+          "rootzone_candidates": [],
+          "quality_flag_candidates": [
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_dca",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the DCA retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag_dca"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_dca",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scah",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-H retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag_scah"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scah",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scav",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag_scav"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scav",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_dca_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the DCA retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_dca_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_dca_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scah_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-H retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_scah_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scah_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scav_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_scav_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scav_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP_E.006",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3856,
+              "YSize": 1624
+            }
+          ]
+        },
+        "SPL3SMP.009": {
+          "surface_soil_moisture_candidates": [
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_soil_moisture",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "soil_moisture"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_soil_moisture",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag']",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_soil_moisture_scav",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "soil_moisture_scav"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_soil_moisture_scav",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scav']",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "soil_moisture_pm"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_pm",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_pm']",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_scav_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Representative SCA-V soil moisture measurement for the Earth based grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "soil_moisture_scav_pm"
+              },
+              "IsQA": false,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_soil_moisture_scav_pm",
+              "OrigDataType": "float32",
+              "OrigValidMax": 0.5,
+              "OrigValidMin": 0.02,
+              "QualityLayers": "['Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scav_pm']",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": 0.5,
+              "ValidMin": 0.02,
+              "XSize": 964,
+              "YSize": 406
+            }
+          ],
+          "rootzone_candidates": [],
+          "quality_flag_candidates": [
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_dca",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the DCA retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag_dca"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_dca",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scah",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-H retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag_scah"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scah",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scav",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_AM",
+                "layer_name": "retrieval_qual_flag_scav"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag_scav",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_dca_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the DCA retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_dca_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_dca_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scah_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-H retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_scah_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scah_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            },
+            {
+              "layer_id": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scav_pm",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Bit flags that record the conditions and the quality of the SCA-V retrieval algorithms that generate soil moisture for the grid cell.",
+              "Dimensions": [
+                "epoch_days",
+                "FakeDim0",
+                "FakeDim1"
+              ],
+              "FillValue": 65534,
+              "FillValueAll": [
+                65534
+              ],
+              "Group": "",
+              "Info": {
+                "group_name": "Soil_Moisture_Retrieval_Data_PM",
+                "layer_name": "retrieval_qual_flag_scav_pm"
+              },
+              "IsQA": true,
+              "Layer": "Soil_Moisture_Retrieval_Data_PM_retrieval_qual_flag_scav_pm",
+              "OrigDataType": "uint16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "SPL3SMP.009",
+              "ScaleFactor": "",
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 964,
+              "YSize": 406
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "ECOSTRESS",
+      "status": "available",
+      "requested_product_ids": [
+        "ECO_L2T_LSTE.002",
+        "ECO_L3T_ET_ALEXI.002"
+      ],
+      "available_product_ids": [
+        "ECO_L2T_LSTE.002",
+        "ECO_L3T_ET_ALEXI.002"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [],
+      "discovered_layer_categories": {
+        "ECO_L2T_LSTE.002": {
+          "temperature_candidates": [
+            {
+              "layer_id": "LST",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Land Surface Temperature",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": "NaN",
+              "FillValueAll": [
+                "NaN"
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "LST",
+              "OrigDataType": "float32",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['QC','cloud']",
+              "QualityProductAndVersion": "ECO_L2T_LSTE.002",
+              "ScaleFactor": 1,
+              "Units": "Kelvin",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 1568,
+              "YSize": 1568
+            },
+            {
+              "layer_id": "LST_err",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Land Surface Temperature error",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": "NaN",
+              "FillValueAll": [
+                "NaN"
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "LST_err",
+              "OrigDataType": "float32",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": 1,
+              "Units": "Kelvin",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 1568,
+              "YSize": 1568
+            }
+          ],
+          "emissivity_candidates": [
+            {
+              "layer_id": "EmisWB",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Wide Band Emissivity",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": "NaN",
+              "FillValueAll": [
+                "NaN"
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "EmisWB",
+              "OrigDataType": "float32",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['QC','cloud']",
+              "QualityProductAndVersion": "ECO_L2T_LSTE.002",
+              "ScaleFactor": 1,
+              "Units": "",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 1568,
+              "YSize": 1568
+            }
+          ],
+          "evapotranspiration_candidates": [],
+          "quality_flag_candidates": [
+            {
+              "layer_id": "QC",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "uint16",
+              "Description": "Quality Control for LST and emissivity",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": null,
+              "FillValueAll": [
+                null
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": true,
+              "Layer": "QC",
+              "OrigDataType": "uint16",
+              "OrigValidMax": 65535.0,
+              "OrigValidMin": 0.0,
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": 1,
+              "Units": "",
+              "ValidMax": 65535.0,
+              "ValidMin": 0.0,
+              "XSize": 1568,
+              "YSize": 1568
+            }
+          ],
+          "water_use_efficiency_candidates": [],
+          "evaporative_stress_index_candidates": []
+        },
+        "ECO_L3T_ET_ALEXI.002": {
+          "temperature_candidates": [],
+          "emissivity_candidates": [],
+          "evapotranspiration_candidates": [
+            {
+              "layer_id": "ETdaily",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Evapotranspiration Daily",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": "NaN",
+              "FillValueAll": [
+                "NaN"
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "ETdaily",
+              "OrigDataType": "float32",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": 1,
+              "Units": "mm/day",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 1568,
+              "YSize": 1568
+            },
+            {
+              "layer_id": "ETdailyUncertainty",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Evapotranspiration Daily Uncertainty",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": "NaN",
+              "FillValueAll": [
+                "NaN"
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "ETdailyUncertainty",
+              "OrigDataType": "float32",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": 1,
+              "Units": "mm/day",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 1568,
+              "YSize": 1568
+            }
+          ],
+          "quality_flag_candidates": [],
+          "water_use_efficiency_candidates": [],
+          "evaporative_stress_index_candidates": []
+        }
+      }
+    },
+    {
+      "dataset": "ECOSTRESS_ET_ALEXI",
+      "status": "available",
+      "requested_product_ids": [
+        "ECO_L3T_ET_ALEXI.002"
+      ],
+      "available_product_ids": [
+        "ECO_L3T_ET_ALEXI.002"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [],
+      "discovered_layer_categories": {
+        "ECO_L3T_ET_ALEXI.002": {
+          "evapotranspiration_candidates": [
+            {
+              "layer_id": "ETdaily",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Evapotranspiration Daily",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": "NaN",
+              "FillValueAll": [
+                "NaN"
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "ETdaily",
+              "OrigDataType": "float32",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": 1,
+              "Units": "mm/day",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 1568,
+              "YSize": 1568
+            },
+            {
+              "layer_id": "ETdailyUncertainty",
+              "AddOffset": 0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Evapotranspiration Daily Uncertainty",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": "NaN",
+              "FillValueAll": [
+                "NaN"
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "ETdailyUncertainty",
+              "OrigDataType": "float32",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": 1,
+              "Units": "mm/day",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 1568,
+              "YSize": 1568
+            }
+          ],
+          "water_use_efficiency_candidates": [],
+          "evaporative_stress_index_candidates": []
+        }
+      }
+    },
+    {
+      "dataset": "ASTER",
+      "status": "available",
+      "requested_product_ids": [
+        "ASTGTM_NC.003"
+      ],
+      "available_product_ids": [
+        "ASTGTM_NC.003"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "ASTGTM_NC.003",
+          "checks": [
+            {
+              "requested_layer": "Elevation",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "ASTER_GDEM_DEM",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "int16",
+                  "Description": "Digital Elevation Model",
+                  "Dimensions": [
+                    "time",
+                    "lat",
+                    "lon"
+                  ],
+                  "FillValue": -9999,
+                  "FillValueAll": [
+                    -9999
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "ASTER_GDEM_DEM",
+                  "OrigDataType": "int16",
+                  "OrigValidMax": "",
+                  "OrigValidMin": "",
+                  "QualityLayers": "['ASTER_GDEM_NUM']",
+                  "QualityProductAndVersion": "ASTGTM_NUMNC.003",
+                  "ScaleFactor": "",
+                  "Units": "Meters",
+                  "ValidMax": "",
+                  "ValidMin": "",
+                  "XSize": 3601,
+                  "YSize": 3601
+                }
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {}
+    },
+    {
+      "dataset": "GPM",
+      "status": "unavailable",
+      "requested_product_ids": [],
+      "available_product_ids": [],
+      "alternative_products_not_substituted": [],
+      "reason": "No available product matched the configured AppEEARS product family.",
+      "layer_checks": [],
+      "discovered_layer_categories": {}
+    },
+    {
+      "dataset": "MCD12Q1",
+      "status": "available",
+      "requested_product_ids": [
+        "MCD12Q1.061"
+      ],
+      "available_product_ids": [
+        "MCD12Q1.061"
+      ],
+      "alternative_products_not_substituted": [],
+      "reason": null,
+      "layer_checks": [
+        {
+          "product_id": "MCD12Q1.061",
+          "checks": [
+            {
+              "requested_layer": "Land cover classification",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "LC_Type1",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Land Cover Type 1: Annual International Geosphere-Biosphere Programme (IGBP) classification",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "LC_Type1",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 17,
+                  "OrigValidMin": 1,
+                  "QualityLayers": "['QC']",
+                  "QualityProductAndVersion": "MCD12Q1.061",
+                  "ScaleFactor": "",
+                  "Units": "",
+                  "ValidMax": 17,
+                  "ValidMin": 1,
+                  "XSize": 2400,
+                  "YSize": 2400
+                },
+                {
+                  "layer_id": "LC_Type2",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Land Cover Type 2: Annual University of Maryland (UMD) classification",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "LC_Type2",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 15,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "['QC']",
+                  "QualityProductAndVersion": "MCD12Q1.061",
+                  "ScaleFactor": "",
+                  "Units": "",
+                  "ValidMax": 15,
+                  "ValidMin": 0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                },
+                {
+                  "layer_id": "LC_Type3",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Land Cover Type 3: Annual Leaf Area Index (LAI) classification",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "LC_Type3",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 10,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "['QC']",
+                  "QualityProductAndVersion": "MCD12Q1.061",
+                  "ScaleFactor": "",
+                  "Units": "",
+                  "ValidMax": 10,
+                  "ValidMin": 0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                },
+                {
+                  "layer_id": "LC_Type4",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Land Cover Type 4: Annual BIOME-Biogeochemical Cycles (BGC) classification",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "LC_Type4",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 8,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "['QC']",
+                  "QualityProductAndVersion": "MCD12Q1.061",
+                  "ScaleFactor": "",
+                  "Units": "",
+                  "ValidMax": 8,
+                  "ValidMin": 0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                },
+                {
+                  "layer_id": "LC_Type5",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Land Cover Type 5: Annual Plant Functional Types classification",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": false,
+                  "Layer": "LC_Type5",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 11,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "['QC']",
+                  "QualityProductAndVersion": "MCD12Q1.061",
+                  "ScaleFactor": "",
+                  "Units": "",
+                  "ValidMax": 11,
+                  "ValidMin": 0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            },
+            {
+              "requested_layer": "Quality information",
+              "status": "available",
+              "matched_layers": [
+                {
+                  "layer_id": "QC",
+                  "AddOffset": "",
+                  "Available": true,
+                  "DataType": "byte",
+                  "Description": "Product quality flags",
+                  "Dimensions": [
+                    "time",
+                    "YDim",
+                    "XDim"
+                  ],
+                  "FillValue": 255,
+                  "FillValueAll": [
+                    255
+                  ],
+                  "Group": "",
+                  "Info": {},
+                  "IsQA": true,
+                  "Layer": "QC",
+                  "OrigDataType": "byte",
+                  "OrigValidMax": 10,
+                  "OrigValidMin": 0,
+                  "QualityLayers": "",
+                  "QualityProductAndVersion": "",
+                  "ScaleFactor": "",
+                  "Units": "Class Flag",
+                  "ValidMax": 10,
+                  "ValidMin": 0,
+                  "XSize": 2400,
+                  "YSize": 2400
+                }
+              ],
+              "reason": null
+            }
+          ]
+        }
+      ],
+      "discovered_layer_categories": {}
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "dataset": "HLSL30",
+  "generated_at": "2026-11-09T10:15:22.183187+00:00",
+  "status": "available",
+  "requested_product_ids": [
+    "HLSL30.020"
+  ],
+  "reason": null,
+  "missing_requested_product_ids": [],
+  "available_products": [
+    {
+      "catalog": {
+        "Product": "HLSL30",
+        "Platform": "Harmonized Landsat and Sentinel-2",
+        "Description": "Land Surface Reflectance",
+        "RasterType": "Tile",
+        "Resolution": "30m",
+        "TemporalGranularity": "Daily",
+        "Version": "020",
+        "Available": true,
+        "DocLink": "https://doi.org/10.5067/HLS/HLSL30.002",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2013-04-11",
+        "TemporalExtentEnd": "Present",
+        "Deleted": false,
+        "DOI": "10.5067/HLS/HLSL30.002",
+        "Info": {
+          "provider_id": "lp_prod",
+          "is_utm_zonal": true,
+          "extension": "tif",
+          "cmr_date_parse": "date"
+        },
+        "ProductAndVersion": "HLSL30.020"
+      },
+      "layers": {
+        "B01": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B01 - Coastal Aerosol (0.43 – 0.45 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B01",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B02": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B02 - Blue (0.45 – 0.51 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B02",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B03": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B03 - Green (0.53 – 0.59 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B03",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B04": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B04 - Red (0.64 – 0.67 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B04",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B05": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B05 - NIR (0.85 – 0.88 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B05",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B06": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B06 - SWIR1 (1.57 – 1.65 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B06",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B07": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B07 - SWIR2 (2.11 – 2.29 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B07",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B09": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B09 - Cirrus (1.36 – 1.38 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B09",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.0001,
+          "Units": "Reflectance",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B10": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B10 - TIRS1 (10.60 – 11.19 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B10",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.01,
+          "Units": "Degree ℃",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "B11": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "int16",
+          "Description": "B11 - TIRS2 (11.50 – 12.51 µm)",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "B11",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['Fmask']",
+          "QualityProductAndVersion": "HLSL30.020",
+          "ScaleFactor": 0.01,
+          "Units": "Degree ℃",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "Fmask": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "uint8",
+          "Description": "Quality Bits",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "Fmask",
+          "OrigDataType": "uint8",
+          "OrigValidMax": 255.0,
+          "OrigValidMin": 0.0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "Bit Field",
+          "ValidMax": 255.0,
+          "ValidMin": 0.0,
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "SAA": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "uint16",
+          "Description": "Sun Azimuth Angle",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": 40000,
+          "FillValueAll": [
+            40000
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "SAA",
+          "OrigDataType": "uint16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 0.01,
+          "Units": "Degree",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "SZA": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "uint16",
+          "Description": "Sun Zenith Angle",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": 40000,
+          "FillValueAll": [
+            40000
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "SZA",
+          "OrigDataType": "uint16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 0.01,
+          "Units": "Degree",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "VAA": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "uint16",
+          "Description": "View Azimuth Angle",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": 40000,
+          "FillValueAll": [
+            40000
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "VAA",
+          "OrigDataType": "uint16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 0.01,
+          "Units": "Degree",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        },
+        "VZA": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "uint16",
+          "Description": "View Zenith Angle",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": 40000,
+          "FillValueAll": [
+            40000
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "VZA",
+          "OrigDataType": "uint16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 0.01,
+          "Units": "Degree",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3660,
+          "YSize": 3660
+        }
+      }
+    }
+  ],
+  "alternative_products_not_substituted": [],
+  "layer_checks": [
+    {
+      "product_id": "HLSL30.020",
+      "checks": [
+        {
+          "requested_layer": "B03",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "B03",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "int16",
+              "Description": "B03 - Green (0.53 – 0.59 µm)",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "B03",
+              "OrigDataType": "int16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['Fmask']",
+              "QualityProductAndVersion": "HLSL30.020",
+              "ScaleFactor": 0.0001,
+              "Units": "Reflectance",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3660,
+              "YSize": 3660
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "B04",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "B04",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "int16",
+              "Description": "B04 - Red (0.64 – 0.67 µm)",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "B04",
+              "OrigDataType": "int16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['Fmask']",
+              "QualityProductAndVersion": "HLSL30.020",
+              "ScaleFactor": 0.0001,
+              "Units": "Reflectance",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3660,
+              "YSize": 3660
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "B05",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "B05",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "int16",
+              "Description": "B05 - NIR (0.85 – 0.88 µm)",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "B05",
+              "OrigDataType": "int16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['Fmask']",
+              "QualityProductAndVersion": "HLSL30.020",
+              "ScaleFactor": 0.0001,
+              "Units": "Reflectance",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3660,
+              "YSize": 3660
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "B06",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "B06",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "int16",
+              "Description": "B06 - SWIR1 (1.57 – 1.65 µm)",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "B06",
+              "OrigDataType": "int16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['Fmask']",
+              "QualityProductAndVersion": "HLSL30.020",
+              "ScaleFactor": 0.0001,
+              "Units": "Reflectance",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3660,
+              "YSize": 3660
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "B07",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "B07",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "int16",
+              "Description": "B07 - SWIR2 (2.11 – 2.29 µm)",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "B07",
+              "OrigDataType": "int16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['Fmask']",
+              "QualityProductAndVersion": "HLSL30.020",
+              "ScaleFactor": 0.0001,
+              "Units": "Reflectance",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3660,
+              "YSize": 3660
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "Fmask",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "Fmask",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "uint8",
+              "Description": "Quality Bits",
+              "Dimensions": [
+                "time",
+                "y",
+                "x"
+              ],
+              "FillValue": 255,
+              "FillValueAll": [
+                255
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": true,
+              "Layer": "Fmask",
+              "OrigDataType": "uint8",
+              "OrigValidMax": 255.0,
+              "OrigValidMin": 0.0,
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "Bit Field",
+              "ValidMax": 255.0,
+              "ValidMin": 0.0,
+              "XSize": 3660,
+              "YSize": 3660
+            }
+          ],
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "discovered_layer_categories": {}
+}

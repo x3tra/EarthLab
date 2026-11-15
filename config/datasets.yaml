@@ -1,0 +1,166 @@
+datasets:
+  - name: HLSL30
+    metadata_file: HLSL30.json
+    requested_product_ids: ["HLSL30.020"]
+    product_id: HLSL30.020
+    requested_layers: [B03, B04, B05, B06, B07, Fmask]
+    output_group: HLS
+    enabled: false
+    product_prefixes: ["HLSL30."]
+    required_layers:
+      - {label: B03, match_any: ["B03"]}
+      - {label: B04, match_any: ["B04"]}
+      - {label: B05, match_any: ["B05"]}
+      - {label: B06, match_any: ["B06"]}
+      - {label: B07, match_any: ["B07"]}
+      - {label: Fmask, match_any: ["Fmask"]}
+
+  - name: HLSS30
+    metadata_file: HLSS30.json
+    requested_product_ids: ["HLSS30.020"]
+    product_id: HLSS30.020
+    requested_layers: [B03, B04, B05, B06, B07, Fmask]
+    output_group: HLS
+    enabled: false
+    product_prefixes: ["HLSS30."]
+    required_layers:
+      - {label: B03, match_any: ["B03"]}
+      - {label: B04, match_any: ["B04"]}
+      - {label: B05, match_any: ["B05"]}
+      - {label: B06, match_any: ["B06"]}
+      - {label: B07, match_any: ["B07"]}
+      - {label: Fmask, match_any: ["Fmask"]}
+
+  - name: MOD13Q1
+    metadata_file: MOD13Q1.json
+    requested_product_ids: ["MOD13Q1.061"]
+    product_id: MOD13Q1.061
+    requested_layers: ["_250m_16_days_NDVI"]
+    output_group: MODIS
+    output_name: MOD13Q1
+    enabled: true
+    product_prefixes: ["MOD13Q1"]
+    discover_categories:
+      quality_flag_candidates: ["quality", "qa"]
+    required_layers:
+      - {label: NDVI, match_any: ["NDVI"]}
+      - {label: EVI, match_any: ["EVI"]}
+      - {label: DetailedQA, match_any: ["DetailedQA", "detailed quality"]}
+      - {label: SummaryQA, match_any: ["SummaryQA", "summary quality"]}
+
+  - name: MCD15A3H
+    metadata_file: MCD15A3H.json
+    requested_product_ids: ["MCD15A3H.061"]
+    product_id: MCD15A3H.061
+    requested_layers: [Lai_500m, Fpar_500m, FparLai_QC]
+    output_group: MODIS
+    enabled: false
+    product_prefixes: ["MCD15A3H"]
+    required_layers:
+      - {label: LAI, match_any: ["leaf area index"]}
+      - {label: FPAR, match_any: ["fraction of photosynthetically active radiation"]}
+      - {label: FparLai_QC, match_any: ["FparLai_QC"]}
+
+  - name: MOD11A2
+    metadata_file: MOD11A2.json
+    requested_product_ids: ["MOD11A2.061"]
+    product_id: MOD11A2.061
+    requested_layers: [LST_Day_1km, LST_Night_1km, QC_Day, QC_Night]
+    output_group: MODIS
+    enabled: false
+    product_prefixes: ["MOD11A2"]
+    required_layers:
+      - {label: LST_Day_1km, match_any: ["LST_Day_1km"]}
+      - {label: LST_Night_1km, match_any: ["LST_Night_1km"]}
+      - {label: QC_Day, match_any: ["QC_Day"]}
+      - {label: QC_Night, match_any: ["QC_Night"]}
+
+  - name: MOD16A2GF
+    metadata_file: MOD16A2GF.json
+    requested_product_ids: ["MOD16A2GF.061"]
+    product_id: MOD16A2GF.061
+    requested_layers: [ET_500m, PET_500m, ET_QC_500m]
+    output_group: MODIS
+    enabled: false
+    product_prefixes: ["MOD16A2GF"]
+    required_layers:
+      - {label: ET_500m, match_any: ["ET_500m"]}
+      - {label: PET_500m, match_any: ["PET_500m"]}
+      - {label: ET_QC_500m, match_any: ["ET_QC_500m"]}
+
+  - name: SMAP
+    metadata_file: SMAP.json
+    product_id: SPL3SMP_E.006
+    requested_layers:
+      - Soil_Moisture_Retrieval_Data_AM_soil_moisture
+      - Soil_Moisture_Retrieval_Data_AM_retrieval_qual_flag
+    output_group: SMAP
+    enabled: false
+    product_prefixes: ["SPL3SMP"]
+    discover_categories:
+      surface_soil_moisture_candidates: ["representative SCA-V soil moisture measurement"]
+      rootzone_candidates: ["rootzone", "root zone"]
+      quality_flag_candidates: ["retrieval_qual_flag"]
+
+  - name: ECOSTRESS
+    metadata_file: ECOSTRESS.json
+    product_id: ECO_L2T_LSTE.002
+    requested_layers: [LST, EmisWB, QC]
+    output_group: ECOSTRESS
+    output_name: LSTE
+    enabled: false
+    requested_product_ids: ["ECO_L2T_LSTE.002", "ECO_L3T_ET_ALEXI.002"]
+    product_prefixes: ["ECO_L2T_LSTE", "ECO_L3T_ET_ALEXI"]
+    discover_categories:
+      temperature_candidates: ["land surface temperature"]
+      emissivity_candidates: ["wide band emissivity"]
+      evapotranspiration_candidates: ["evapotranspiration"]
+      quality_flag_candidates: ["quality", "qc"]
+      water_use_efficiency_candidates: ["water use efficiency"]
+      evaporative_stress_index_candidates: ["evaporative stress index"]
+
+  - name: ECOSTRESS_ET_ALEXI
+    metadata_file: ECOSTRESS_ET_ALEXI.json
+    product_id: ECO_L3T_ET_ALEXI.002
+    requested_layers: [ETdaily]
+    output_group: ECOSTRESS
+    output_name: ET_ALEXI
+    enabled: false
+    requested_product_ids: ["ECO_L3T_ET_ALEXI.002"]
+    product_prefixes: ["ECO_L3T_ET_ALEXI"]
+    discover_categories:
+      evapotranspiration_candidates: ["evapotranspiration"]
+      water_use_efficiency_candidates: ["water use efficiency"]
+      evaporative_stress_index_candidates: ["evaporative stress index"]
+
+  - name: ASTER
+    metadata_file: ASTER.json
+    requested_product_ids: ["ASTGTM_NC.003"]
+    product_id: ASTGTM_NC.003
+    requested_layers: [ASTER_GDEM_DEM]
+    output_group: ASTER
+    output_name: GDEM
+    enabled: false
+    product_prefixes: ["ASTGTM_NC"]
+    required_layers:
+      - {label: Elevation, match_any: ["elevation"]}
+
+  - name: GPM
+    metadata_file: GPM.json
+    enabled: false
+    product_contains: ["GPM", "IMERG"]
+    discover_categories:
+      precipitation_candidates: ["precipitation"]
+      precipitation_rate_candidates: ["precipitation rate", "precipitationrate"]
+
+  - name: MCD12Q1
+    metadata_file: MCD12Q1.json
+    requested_product_ids: ["MCD12Q1.061"]
+    product_id: MCD12Q1.061
+    requested_layers: [LC_Type1, QC]
+    output_group: MODIS
+    enabled: false
+    product_prefixes: ["MCD12Q1"]
+    required_layers:
+      - {label: Land cover classification, match_any: ["land cover type", "LC_Type"]}
+      - {label: Quality information, match_any: ["quality", "QC"]}

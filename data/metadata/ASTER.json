@@ -1,0 +1,114 @@
+{
+  "dataset": "ASTER",
+  "generated_at": "2026-11-09T10:15:33.494347+00:00",
+  "status": "available",
+  "requested_product_ids": [
+    "ASTGTM_NC.003"
+  ],
+  "reason": null,
+  "missing_requested_product_ids": [],
+  "available_products": [
+    {
+      "catalog": {
+        "Product": "ASTGTM_NC",
+        "Platform": "ASTER GDEM",
+        "Description": "Elevation",
+        "RasterType": "Tile",
+        "Resolution": "30m",
+        "TemporalGranularity": "Static",
+        "Version": "003",
+        "Available": true,
+        "DocLink": "https://doi.org/10.5067/ASTER/ASTGTM_NC.003",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2000-03-01",
+        "TemporalExtentEnd": "2013-11-30",
+        "Deleted": false,
+        "DOI": "10.5067/ASTER/ASTGTM_NC.003",
+        "Info": {
+          "collection_concept_id": "C2439422590-LPCLOUD",
+          "provider_id": "lp_prod"
+        },
+        "ProductAndVersion": "ASTGTM_NC.003"
+      },
+      "layers": {
+        "ASTER_GDEM_DEM": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "int16",
+          "Description": "Digital Elevation Model",
+          "Dimensions": [
+            "time",
+            "lat",
+            "lon"
+          ],
+          "FillValue": -9999,
+          "FillValueAll": [
+            -9999
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ASTER_GDEM_DEM",
+          "OrigDataType": "int16",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['ASTER_GDEM_NUM']",
+          "QualityProductAndVersion": "ASTGTM_NUMNC.003",
+          "ScaleFactor": "",
+          "Units": "Meters",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 3601,
+          "YSize": 3601
+        }
+      }
+    }
+  ],
+  "alternative_products_not_substituted": [],
+  "layer_checks": [
+    {
+      "product_id": "ASTGTM_NC.003",
+      "checks": [
+        {
+          "requested_layer": "Elevation",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "ASTER_GDEM_DEM",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "int16",
+              "Description": "Digital Elevation Model",
+              "Dimensions": [
+                "time",
+                "lat",
+                "lon"
+              ],
+              "FillValue": -9999,
+              "FillValueAll": [
+                -9999
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "ASTER_GDEM_DEM",
+              "OrigDataType": "int16",
+              "OrigValidMax": "",
+              "OrigValidMin": "",
+              "QualityLayers": "['ASTER_GDEM_NUM']",
+              "QualityProductAndVersion": "ASTGTM_NUMNC.003",
+              "ScaleFactor": "",
+              "Units": "Meters",
+              "ValidMax": "",
+              "ValidMin": "",
+              "XSize": 3601,
+              "YSize": 3601
+            }
+          ],
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "discovered_layer_categories": {}
+}

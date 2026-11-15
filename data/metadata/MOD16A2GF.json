@@ -1,0 +1,346 @@
+{
+  "dataset": "MOD16A2GF",
+  "generated_at": "2026-11-09T10:15:30.758887+00:00",
+  "status": "available",
+  "requested_product_ids": [
+    "MOD16A2GF.061"
+  ],
+  "reason": null,
+  "missing_requested_product_ids": [],
+  "available_products": [
+    {
+      "catalog": {
+        "Product": "MOD16A2GF",
+        "Platform": "Terra MODIS",
+        "Description": "Net Evapotranspiration Gap-Filled (ET & LE)",
+        "RasterType": "Tile",
+        "Resolution": "500m",
+        "TemporalGranularity": "8 day",
+        "Version": "061",
+        "Available": true,
+        "DocLink": "https://doi.org/10.5067/MODIS/MOD16A2GF.061",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2000-01-01",
+        "TemporalExtentEnd": "Present",
+        "Deleted": false,
+        "DOI": "10.5067/MODIS/MOD16A2GF.061",
+        "Info": {
+          "collection_concept_id": "C2565791021-LPCLOUD",
+          "provider_id": "lp_prod"
+        },
+        "ProductAndVersion": "MOD16A2GF.061"
+      },
+      "layers": {
+        "ET_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Total Evapotranspiration",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 32767,
+          "FillValueAll": [
+            32761,
+            32762,
+            32763,
+            32764,
+            32765,
+            32766,
+            32767
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ET_500m",
+          "OrigDataType": "int16",
+          "OrigValidMax": 32700,
+          "OrigValidMin": -32767,
+          "QualityLayers": "['ET_QC_500m']",
+          "QualityProductAndVersion": "MOD16A2GF.061",
+          "ScaleFactor": 0.1,
+          "Units": "kg/m^2/8day",
+          "ValidMax": 3270.0,
+          "ValidMin": -3276.699951,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "ET_QC_500m": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "byte",
+          "Description": "Evapotranspiration Quality Control flags",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "ET_QC_500m",
+          "OrigDataType": "byte",
+          "OrigValidMax": 254,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "Bit Field",
+          "ValidMax": 254.0,
+          "ValidMin": 0.0,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "LE_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Average Latent Heat Flux",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 32767,
+          "FillValueAll": [
+            32761,
+            32762,
+            32763,
+            32764,
+            32765,
+            32766,
+            32767
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LE_500m",
+          "OrigDataType": "int16",
+          "OrigValidMax": 32700,
+          "OrigValidMin": -32767,
+          "QualityLayers": "['ET_QC_500m']",
+          "QualityProductAndVersion": "MOD16A2GF.061",
+          "ScaleFactor": 0.01,
+          "Units": "MJ/m^2/day",
+          "ValidMax": 327.0,
+          "ValidMin": -327.67,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "PET_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Total Potential Evapotranspiration",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 32767,
+          "FillValueAll": [
+            32761,
+            32762,
+            32763,
+            32764,
+            32765,
+            32766,
+            32767
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "PET_500m",
+          "OrigDataType": "int16",
+          "OrigValidMax": 32700,
+          "OrigValidMin": -32767,
+          "QualityLayers": "['ET_QC_500m']",
+          "QualityProductAndVersion": "MOD16A2GF.061",
+          "ScaleFactor": 0.1,
+          "Units": "kg/m^2/8day",
+          "ValidMax": 3270.0,
+          "ValidMin": -3276.699951,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "PLE_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Average Potential Latent Heat Flux",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 32767,
+          "FillValueAll": [
+            32761,
+            32762,
+            32763,
+            32764,
+            32765,
+            32766,
+            32767
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "PLE_500m",
+          "OrigDataType": "int16",
+          "OrigValidMax": 32700,
+          "OrigValidMin": -32767,
+          "QualityLayers": "['ET_QC_500m']",
+          "QualityProductAndVersion": "MOD16A2GF.061",
+          "ScaleFactor": 0.01,
+          "Units": "MJ/m^2/day",
+          "ValidMax": 327.0,
+          "ValidMin": -327.67,
+          "XSize": 2400,
+          "YSize": 2400
+        }
+      }
+    }
+  ],
+  "alternative_products_not_substituted": [],
+  "layer_checks": [
+    {
+      "product_id": "MOD16A2GF.061",
+      "checks": [
+        {
+          "requested_layer": "ET_500m",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "ET_500m",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Total Evapotranspiration",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 32767,
+              "FillValueAll": [
+                32761,
+                32762,
+                32763,
+                32764,
+                32765,
+                32766,
+                32767
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "ET_500m",
+              "OrigDataType": "int16",
+              "OrigValidMax": 32700,
+              "OrigValidMin": -32767,
+              "QualityLayers": "['ET_QC_500m']",
+              "QualityProductAndVersion": "MOD16A2GF.061",
+              "ScaleFactor": 0.1,
+              "Units": "kg/m^2/8day",
+              "ValidMax": 3270.0,
+              "ValidMin": -3276.699951,
+              "XSize": 2400,
+              "YSize": 2400
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "PET_500m",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "PET_500m",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Total Potential Evapotranspiration",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 32767,
+              "FillValueAll": [
+                32761,
+                32762,
+                32763,
+                32764,
+                32765,
+                32766,
+                32767
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "PET_500m",
+              "OrigDataType": "int16",
+              "OrigValidMax": 32700,
+              "OrigValidMin": -32767,
+              "QualityLayers": "['ET_QC_500m']",
+              "QualityProductAndVersion": "MOD16A2GF.061",
+              "ScaleFactor": 0.1,
+              "Units": "kg/m^2/8day",
+              "ValidMax": 3270.0,
+              "ValidMin": -3276.699951,
+              "XSize": 2400,
+              "YSize": 2400
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "ET_QC_500m",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "ET_QC_500m",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "byte",
+              "Description": "Evapotranspiration Quality Control flags",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 255,
+              "FillValueAll": [
+                255
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": true,
+              "Layer": "ET_QC_500m",
+              "OrigDataType": "byte",
+              "OrigValidMax": 254,
+              "OrigValidMin": 0,
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "Bit Field",
+              "ValidMax": 254.0,
+              "ValidMin": 0.0,
+              "XSize": 2400,
+              "YSize": 2400
+            }
+          ],
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "discovered_layer_categories": {}
+}

@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "geographic_scope": "General FAO guidance; not validated for Uzbekistan or a local crop variety.",
+  "interpretation": [
+    "FAO-56 season lengths are examples from named regions and planting periods, not universal crop durations or optimums.",
+    "FAO-56 Kc values describe well-managed, non-stressed crops under the climate and reference-ET assumptions stated in Table 12. They are coefficients for estimating ETc from local ETo, not seasonal water volumes.",
+    "Root depth and depletion fraction p are irrigation-management guidance. FAO-56 notes p varies with ETc and weather; values shown are table values at ETc approximately 5 mm/day.",
+    "No crop suitability scores or planting recommendations are generated from these data."
+  ],
+  "sources": {
+    "FAO56_TABLE11": {
+      "title": "FAO Irrigation and Drainage Paper 56, Chapter 6, Table 11: Lengths of crop development stages",
+      "url": "https://www.fao.org/4/x0490e/x0490e0b.htm"
+    },
+    "FAO56_TABLE12": {
+      "title": "FAO Irrigation and Drainage Paper 56, Chapter 6, Table 12: Single crop coefficients",
+      "url": "https://www.fao.org/4/x0490e/x0490e0b.htm"
+    },
+    "FAO56_TABLE22": {
+      "title": "FAO Irrigation and Drainage Paper 56, Chapter 8, Table 22: Effective rooting depth and depletion fraction p",
+      "url": "https://www.fao.org/4/x0490e/x0490e0e.htm"
+    },
+    "FAO29": {
+      "title": "FAO Irrigation and Drainage Paper 29 Rev. 1: Water Quality for Agriculture",
+      "url": "https://www.fao.org/4/t0234e/t0234e00.htm"
+    }
+  },
+  "parameter_units": {
+    "season_length_days": "day",
+    "kc_initial": "dimensionless",
+    "kc_mid": "dimensionless",
+    "kc_end": "dimensionless",
+    "effective_root_depth_m": "m",
+    "depletion_fraction_p": "fraction"
+  },
+  "unverified_environmental_suitability_fields": {
+    "temperature_minimum_c": null,
+    "temperature_optimum_c": null,
+    "temperature_maximum_c": null,
+    "precipitation_mm": null,
+    "soil_ph": null,
+    "soil_texture": null,
+    "drainage": null,
+    "soil_salinity_ECe_dS_m": null
+  },
+  "crops": [
+    {
+      "id": "cotton",
+      "name": "Cotton",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [180, 225], "source": "FAO56_TABLE11", "qualification": "Regional examples; stage lengths vary by location."},
+        {"parameter": "kc_mid", "values": [1.15, 1.2], "source": "FAO56_TABLE12", "qualification": "Table 12 range."},
+        {"parameter": "kc_end", "values": [0.5, 0.7], "source": "FAO56_TABLE12", "qualification": "Table 12 range; reported endpoints span 0.70 to 0.50."},
+        {"parameter": "effective_root_depth_m", "values": [1.0, 1.7], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.65, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "general wheat/barley cereal examples", "values": [120, 200], "source": "FAO56_TABLE11", "qualification": "Pooled cereal examples; not a wheat-specific optimum."},
+        {"parameter": "season_length_days", "variant": "winter wheat examples", "values": [180, 335], "source": "FAO56_TABLE11", "qualification": "Examples vary substantially by region and planting period."},
+        {"parameter": "kc_mid", "variant": "spring and winter wheat", "values": 1.15, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "spring and winter wheat", "values": [0.25, 0.4], "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "variant": "spring wheat", "values": [1.0, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "spring wheat", "values": 0.55, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."},
+        {"parameter": "effective_root_depth_m", "variant": "winter wheat", "values": [1.5, 1.8], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "winter wheat", "values": 0.55, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "rice",
+      "name": "Rice",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [150, 180], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_initial", "values": 1.05, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_mid", "values": 1.2, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": [0.6, 0.9], "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.5, 1.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.2, "source": "FAO56_TABLE22", "qualification": "FAO-56 table notes rice p as a fraction of saturation."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "maize",
+      "name": "Maize (grain)",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [125, 180], "source": "FAO56_TABLE11", "qualification": "Regional examples for grain maize."},
+        {"parameter": "kc_mid", "values": 1.2, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": [0.35, 0.6], "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [1.0, 1.7], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.55, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "barley",
+      "name": "Barley",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [120, 200], "source": "FAO56_TABLE11", "qualification": "Pooled barley/oats/wheat cereal examples."},
+        {"parameter": "kc_mid", "values": 1.15, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": 0.25, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [1.0, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.55, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "sunflower",
+      "name": "Sunflower",
+      "guidance": [
+        {"parameter": "season_length_days", "values": 130, "source": "FAO56_TABLE11", "qualification": "Example from the listed region and planting period."},
+        {"parameter": "kc_mid", "values": [1.0, 1.15], "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": 0.35, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.8, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.45, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "soybean",
+      "name": "Soybean",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [85, 150], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "values": 1.15, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": 0.5, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.6, 1.3], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.5, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "potato",
+      "name": "Potato",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [115, 165], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "values": 1.15, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": 0.75, "source": "FAO56_TABLE12", "qualification": "Table 12 footnote gives about 0.40 for long-season crops with vine kill."},
+        {"parameter": "effective_root_depth_m", "values": [0.4, 0.6], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.35, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "tomato",
+      "name": "Tomato",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [135, 180], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "values": 1.15, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": [0.7, 0.9], "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.7, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.4, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "onion",
+      "name": "Onion",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "dry bulb", "values": [150, 210], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "season_length_days", "variant": "green onion", "values": [70, 180], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "variant": "dry bulb", "values": 1.05, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "dry bulb", "values": 0.75, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_mid", "variant": "green", "values": 1.0, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "green", "values": 1.0, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.3, 0.6], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.3, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [100, 200], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "values": 1.05, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": 0.95, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.5, 1.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.35, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "cucumber",
+      "name": "Cucumber",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [105, 130], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "variant": "fresh market", "values": 1.0, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "fresh market", "values": 0.75, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_mid", "variant": "machine harvest", "values": 1.0, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "machine harvest", "values": 0.9, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.7, 1.2], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.5, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "melon",
+      "name": "Melon",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "cantaloupe", "values": 120, "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "season_length_days", "variant": "sweet melon", "values": [120, 160], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "variant": "cantaloupe", "values": 0.85, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "cantaloupe", "values": 0.6, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_mid", "variant": "sweet melon", "values": 1.05, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "sweet melon", "values": 0.75, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "variant": "cantaloupe", "values": [0.9, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "cantaloupe", "values": 0.45, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."},
+        {"parameter": "effective_root_depth_m", "variant": "sweet melon", "values": [0.8, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "sweet melon", "values": 0.4, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "watermelon",
+      "name": "Watermelon",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [80, 110], "source": "FAO56_TABLE11", "qualification": "Regional examples."},
+        {"parameter": "kc_mid", "values": 1.0, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": 0.75, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [0.8, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.4, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "grapes",
+      "name": "Grapes",
+      "guidance": [
+        {"parameter": "season_length_days", "values": [180, 240], "source": "FAO56_TABLE11", "qualification": "Examples vary by latitude and grape use."},
+        {"parameter": "kc_mid", "variant": "table or raisin", "values": 0.85, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "table or raisin", "values": 0.45, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_mid", "variant": "wine", "values": 0.7, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "wine", "values": 0.45, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "variant": "table or raisin", "values": [1.0, 2.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "table or raisin", "values": 0.35, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."},
+        {"parameter": "effective_root_depth_m", "variant": "wine", "values": [1.0, 2.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "wine", "values": 0.45, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "general deciduous orchard", "values": [210, 270], "source": "FAO56_TABLE11", "qualification": "Not apple-specific; one cited regional example is 240 days."},
+        {"parameter": "kc_mid", "variant": "apples/cherries/pears group", "values": [0.95, 1.2], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "kc_end", "variant": "apples/cherries/pears group", "values": [0.7, 0.95], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "effective_root_depth_m", "values": [1.0, 2.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.5, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "apricot",
+      "name": "Apricot",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "general deciduous orchard", "values": [210, 270], "source": "FAO56_TABLE11", "qualification": "Not apricot-specific."},
+        {"parameter": "kc_mid", "variant": "stone-fruit group", "values": [0.9, 1.15], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "kc_end", "variant": "stone-fruit group", "values": [0.65, 0.9], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "effective_root_depth_m", "variant": "general fruit tree guidance", "values": [1.0, 2.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "general fruit tree guidance", "values": 0.5, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day; not species-specific."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "peach",
+      "name": "Peach",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "general deciduous orchard", "values": [210, 270], "source": "FAO56_TABLE11", "qualification": "Not peach-specific."},
+        {"parameter": "kc_mid", "variant": "stone-fruit group", "values": [0.9, 1.15], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "kc_end", "variant": "stone-fruit group", "values": [0.65, 0.9], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "effective_root_depth_m", "variant": "general fruit tree guidance", "values": [1.0, 2.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "variant": "general fruit tree guidance", "values": 0.5, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day; not species-specific."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "cherry",
+      "name": "Cherry",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "general deciduous orchard", "values": [210, 270], "source": "FAO56_TABLE11", "qualification": "Not cherry-specific."},
+        {"parameter": "kc_mid", "variant": "apples/cherries/pears group", "values": [0.95, 1.2], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "kc_end", "variant": "apples/cherries/pears group", "values": [0.7, 0.95], "source": "FAO56_TABLE12", "qualification": "Depends on ground cover and frost conditions."},
+        {"parameter": "effective_root_depth_m", "values": [1.0, 2.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.5, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "pomegranate",
+      "name": "Pomegranate",
+      "guidance": [],
+      "environmental_suitability": null,
+      "data_status": "No crop-specific values verified in the reviewed sources."
+    },
+    {
+      "id": "alfalfa",
+      "name": "Alfalfa",
+      "guidance": [
+        {"parameter": "season_length_days", "variant": "first cutting cycle", "values": [60, 75], "source": "FAO56_TABLE11", "qualification": "Perennial crop timing is related to frost dates; this is a cycle, not total crop life."},
+        {"parameter": "season_length_days", "variant": "other cutting cycles", "values": [30, 45], "source": "FAO56_TABLE11", "qualification": "Perennial crop timing is related to frost dates; this is a cycle, not total crop life."},
+        {"parameter": "kc_mid", "variant": "hay averaged cutting effects", "values": 0.95, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "hay averaged cutting effects", "values": 0.9, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_mid", "variant": "individual cutting periods", "values": 1.2, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "variant": "individual cutting periods", "values": 1.15, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [1.0, 2.0], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.55, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    },
+    {
+      "id": "sesame",
+      "name": "Sesame",
+      "guidance": [
+        {"parameter": "season_length_days", "values": 100, "source": "FAO56_TABLE11", "qualification": "Example from the listed region and planting period."},
+        {"parameter": "kc_mid", "values": 1.1, "source": "FAO56_TABLE12"},
+        {"parameter": "kc_end", "values": 0.25, "source": "FAO56_TABLE12"},
+        {"parameter": "effective_root_depth_m", "values": [1.0, 1.5], "source": "FAO56_TABLE22"},
+        {"parameter": "depletion_fraction_p", "values": 0.6, "source": "FAO56_TABLE22", "qualification": "Table value at ETc approximately 5 mm/day."}
+      ],
+      "environmental_suitability": null
+    }
+  ]
+}

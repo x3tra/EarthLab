@@ -1,0 +1,100 @@
+Metadata-Version: 2.4
+Name: nasa-agri-intelligence
+Version: 0.1.0
+Summary: NASA satellite data pipeline for global agricultural land suitability assessment
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.0
+Requires-Dist: pandas>=2.2
+Requires-Dist: rasterio>=1.3
+Requires-Dist: xarray>=2024.7
+Requires-Dist: geopandas>=1.0
+Requires-Dist: shapely>=2.0
+Requires-Dist: pyproj>=3.6
+Requires-Dist: requests>=2.32
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: matplotlib>=3.9
+Requires-Dist: scipy>=1.14
+Requires-Dist: Pillow>=10.0
+Requires-Dist: pydantic>=2.8
+Requires-Dist: pydantic-settings>=2.6
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: PyYAML>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3; extra == "dev"
+Requires-Dist: httpx2>=2.0; extra == "dev"
+Provides-Extra: web
+Requires-Dist: fastapi>=0.115; extra == "web"
+Requires-Dist: uvicorn[standard]>=0.30; extra == "web"
+
+# NASA Agri Intelligence
+
+This project turns NASA Earth observation data into a task-based agricultural analysis workflow. It pulls AppEEARS/NASA datasets for a selected area, standardizes the downloaded rasters, summarizes them by AOI grid cells, and exposes the result in a local web interface for inspection and downstream analysis.
+
+## How it works
+
+1. Define a study area and collection settings.
+2. Submit a NASA/AppEEARS task for the chosen product and layers.
+3. Download and validate the task output.
+4. Standardize the rasters using NASA metadata, masks, and QA rules.
+5. Aggregate the data into AOI grid cells for spatial analysis.
+6. View and manage the workflow through the local site and API.
+
+The app is built around a Python backend plus a small frontend. The backend handles NASA task management, downloads, data validation, and processing; the frontend gives a quick site for interacting with tasks and results locally.
+
+## Quickstart the site
+
+Requirements:
+- Python 3.12+
+- Node.js + npm
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev,web]"
+npm --prefix frontend install
+```
+
+Create your environment file:
+
+```bash
+cp .env.example .env
+```
+
+Fill in NASA credentials in `.env` (for example `NASA_APP_EARS_TOKEN` or `EARTHDATA_USERNAME` / `EARTHDATA_PASSWORD`).
+
+Start the backend:
+
+```bash
+source .venv/bin/activate
+python -m uvicorn nasa_agri_intelligence.web:app --host 127.0.0.1 --port 8000
+```
+
+Start the frontend in another terminal:
+
+```bash
+npm --prefix frontend run dev
+```
+
+Open the frontend in your browser at:
+
+```text
+http://127.0.0.1:5173
+```
+
+Optional sanity check before using real NASA tasks:
+
+```bash
+source .venv/bin/activate
+python main.py validate
+```
+
+Then submit a task and work through the site flow as needed:
+
+```bash
+python main.py tasks submit --product MOD13Q1.061 --task-name MY_TASK
+python main.py tasks list
+```
+
+This repo is meant for local workflow use and development; the site is intended to run on localhost and is not a production public deployment.

@@ -1,0 +1,558 @@
+{
+  "dataset": "MOD11A2",
+  "generated_at": "2026-11-09T10:15:30.455155+00:00",
+  "status": "available",
+  "requested_product_ids": [
+    "MOD11A2.061"
+  ],
+  "reason": null,
+  "missing_requested_product_ids": [],
+  "available_products": [
+    {
+      "catalog": {
+        "Product": "MOD11A2",
+        "Platform": "Terra MODIS",
+        "Description": "Land Surface Temperature & Emissivity (LST&E)",
+        "RasterType": "Tile",
+        "Resolution": "1000m",
+        "TemporalGranularity": "8 day",
+        "Version": "061",
+        "Available": true,
+        "DocLink": "https://doi.org/10.5067/MODIS/MOD11A2.061",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2000-02-18",
+        "TemporalExtentEnd": "Present",
+        "Deleted": false,
+        "DOI": "10.5067/MODIS/MOD11A2.061",
+        "Info": {
+          "collection_concept_id": "C2269056084-LPCLOUD",
+          "provider_id": "lp_prod"
+        },
+        "ProductAndVersion": "MOD11A2.061"
+      },
+      "layers": {
+        "Clear_sky_days": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "byte",
+          "Description": "the days in clear-sky conditions and with validate LSTs",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Clear_sky_days",
+          "OrigDataType": "byte",
+          "OrigValidMax": 255,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "",
+          "ValidMax": 255.0,
+          "ValidMin": 0.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "Clear_sky_nights": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "byte",
+          "Description": "the nights in clear-sky conditions and with validate LSTs",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Clear_sky_nights",
+          "OrigDataType": "byte",
+          "OrigValidMax": 255,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "",
+          "ValidMax": 255.0,
+          "ValidMin": 0.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "Day_view_angl": {
+          "AddOffset": -65.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "View zenith angle of day observation",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Day_view_angl",
+          "OrigDataType": "byte",
+          "OrigValidMax": 130,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1.0,
+          "Units": "Degree",
+          "ValidMax": 65.0,
+          "ValidMin": -65.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "Day_view_time": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Local time of day observation",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Day_view_time",
+          "OrigDataType": "byte",
+          "OrigValidMax": 240,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 0.1,
+          "Units": "Hours",
+          "ValidMax": 24.0,
+          "ValidMin": 0.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "Emis_31": {
+          "AddOffset": 0.49,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Band 31 emissivity",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Emis_31",
+          "OrigDataType": "byte",
+          "OrigValidMax": 255,
+          "OrigValidMin": 1,
+          "QualityLayers": "['QC_Day']",
+          "QualityProductAndVersion": "MOD11A2.061",
+          "ScaleFactor": 0.002,
+          "Units": "",
+          "ValidMax": 1.0,
+          "ValidMin": 0.4920000136,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "Emis_32": {
+          "AddOffset": 0.49,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Band 32 emissivity",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Emis_32",
+          "OrigDataType": "byte",
+          "OrigValidMax": 255,
+          "OrigValidMin": 1,
+          "QualityLayers": "['QC_Day']",
+          "QualityProductAndVersion": "MOD11A2.061",
+          "ScaleFactor": 0.002,
+          "Units": "",
+          "ValidMax": 1.0,
+          "ValidMin": 0.4920000136,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "LST_Day_1km": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Day Land Surface Temperature",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LST_Day_1km",
+          "OrigDataType": "uint16",
+          "OrigValidMax": 65535,
+          "OrigValidMin": 7500,
+          "QualityLayers": "['QC_Day']",
+          "QualityProductAndVersion": "MOD11A2.061",
+          "ScaleFactor": 0.02,
+          "Units": "Kelvin",
+          "ValidMax": 1310.699951,
+          "ValidMin": 150.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "LST_Night_1km": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Night Land Surface Temperature",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LST_Night_1km",
+          "OrigDataType": "uint16",
+          "OrigValidMax": 65535,
+          "OrigValidMin": 7500,
+          "QualityLayers": "['QC_Night']",
+          "QualityProductAndVersion": "MOD11A2.061",
+          "ScaleFactor": 0.02,
+          "Units": "Kelvin",
+          "ValidMax": 1310.699951,
+          "ValidMin": 150.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "Night_view_angl": {
+          "AddOffset": -65.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "View zenith angle of night observation",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Night_view_angl",
+          "OrigDataType": "byte",
+          "OrigValidMax": 130,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1.0,
+          "Units": "Degree",
+          "ValidMax": 65.0,
+          "ValidMin": -65.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "Night_view_time": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Local time of night observation",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Night_view_time",
+          "OrigDataType": "byte",
+          "OrigValidMax": 240,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 0.1,
+          "Units": "Hours",
+          "ValidMax": 24.0,
+          "ValidMin": 0.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "QC_Day": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "byte",
+          "Description": "Daytime LST Quality Indicators",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "QC_Day",
+          "OrigDataType": "byte",
+          "OrigValidMax": 255,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "Bit Field",
+          "ValidMax": 255.0,
+          "ValidMin": 0.0,
+          "XSize": 1200,
+          "YSize": 1200
+        },
+        "QC_Night": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "byte",
+          "Description": "Nighttime LST Quality indicators",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 0,
+          "FillValueAll": [
+            0
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "QC_Night",
+          "OrigDataType": "byte",
+          "OrigValidMax": 255,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "Bit Field",
+          "ValidMax": 255.0,
+          "ValidMin": 0.0,
+          "XSize": 1200,
+          "YSize": 1200
+        }
+      }
+    }
+  ],
+  "alternative_products_not_substituted": [],
+  "layer_checks": [
+    {
+      "product_id": "MOD11A2.061",
+      "checks": [
+        {
+          "requested_layer": "LST_Day_1km",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "LST_Day_1km",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Day Land Surface Temperature",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 0,
+              "FillValueAll": [
+                0
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "LST_Day_1km",
+              "OrigDataType": "uint16",
+              "OrigValidMax": 65535,
+              "OrigValidMin": 7500,
+              "QualityLayers": "['QC_Day']",
+              "QualityProductAndVersion": "MOD11A2.061",
+              "ScaleFactor": 0.02,
+              "Units": "Kelvin",
+              "ValidMax": 1310.699951,
+              "ValidMin": 150.0,
+              "XSize": 1200,
+              "YSize": 1200
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "LST_Night_1km",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "LST_Night_1km",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Night Land Surface Temperature",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 0,
+              "FillValueAll": [
+                0
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "LST_Night_1km",
+              "OrigDataType": "uint16",
+              "OrigValidMax": 65535,
+              "OrigValidMin": 7500,
+              "QualityLayers": "['QC_Night']",
+              "QualityProductAndVersion": "MOD11A2.061",
+              "ScaleFactor": 0.02,
+              "Units": "Kelvin",
+              "ValidMax": 1310.699951,
+              "ValidMin": 150.0,
+              "XSize": 1200,
+              "YSize": 1200
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "QC_Day",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "QC_Day",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "byte",
+              "Description": "Daytime LST Quality Indicators",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 0,
+              "FillValueAll": [
+                0
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": true,
+              "Layer": "QC_Day",
+              "OrigDataType": "byte",
+              "OrigValidMax": 255,
+              "OrigValidMin": 0,
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "Bit Field",
+              "ValidMax": 255.0,
+              "ValidMin": 0.0,
+              "XSize": 1200,
+              "YSize": 1200
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "QC_Night",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "QC_Night",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "byte",
+              "Description": "Nighttime LST Quality indicators",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 0,
+              "FillValueAll": [
+                0
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": true,
+              "Layer": "QC_Night",
+              "OrigDataType": "byte",
+              "OrigValidMax": 255,
+              "OrigValidMin": 0,
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "Bit Field",
+              "ValidMax": 255.0,
+              "ValidMin": 0.0,
+              "XSize": 1200,
+              "YSize": 1200
+            }
+          ],
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "discovered_layer_categories": {}
+}

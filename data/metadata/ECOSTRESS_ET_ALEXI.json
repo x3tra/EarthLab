@@ -1,0 +1,171 @@
+{
+  "dataset": "ECOSTRESS_ET_ALEXI",
+  "generated_at": "2026-11-09T10:15:33.185637+00:00",
+  "status": "available",
+  "requested_product_ids": [
+    "ECO_L3T_ET_ALEXI.002"
+  ],
+  "reason": null,
+  "missing_requested_product_ids": [],
+  "available_products": [
+    {
+      "catalog": {
+        "Product": "ECO_L3T_ET_ALEXI",
+        "Platform": "ECOSTRESS",
+        "Description": "Evapotranspiration dis-ALEXI-JPL",
+        "RasterType": "Tile",
+        "Resolution": "70m",
+        "TemporalGranularity": "ISS-dependent",
+        "Version": "002",
+        "Available": true,
+        "DocLink": "https://doi.org/10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2018-07-15",
+        "TemporalExtentEnd": "Present",
+        "Deleted": false,
+        "DOI": "10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002",
+        "Info": {
+          "provider_id": "lp_prod",
+          "is_utm_zonal": true,
+          "extension": "tif",
+          "cmr_date_parse": "datetime"
+        },
+        "ProductAndVersion": "ECO_L3T_ET_ALEXI.002"
+      },
+      "layers": {
+        "ETdaily": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdaily",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "ETdailyUncertainty": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily Uncertainty",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdailyUncertainty",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      }
+    }
+  ],
+  "alternative_products_not_substituted": [],
+  "layer_checks": [],
+  "discovered_layer_categories": {
+    "ECO_L3T_ET_ALEXI.002": {
+      "evapotranspiration_candidates": [
+        {
+          "layer_id": "ETdaily",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdaily",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        {
+          "layer_id": "ETdailyUncertainty",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily Uncertainty",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdailyUncertainty",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      ],
+      "water_use_efficiency_candidates": [],
+      "evaporative_stress_index_candidates": []
+    }
+  }
+}

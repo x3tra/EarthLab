@@ -1,0 +1,35 @@
+task_name_prefix: nasa-agri
+aoi:
+  name: tashkent_test
+  crs: EPSG:4326
+  geojson:
+    type: FeatureCollection
+    features:
+      - type: Feature
+        properties: {}
+        geometry:
+          type: Polygon
+          coordinates:
+            - - [69.2797, 41.3111]
+              - [69.2807, 41.3111]
+              - [69.2807, 41.3121]
+              - [69.2797, 41.3121]
+              - [69.2797, 41.3111]
+start_date: "2025-07-01"
+end_date: "2025-07-16"
+output:
+  format: geotiff
+  projection: native
+  directory: data/raw
+  manifests_directory: data/manifests
+  metadata_directory: data/metadata
+monitoring:
+  poll_interval_seconds: 30
+  request_timeout_seconds: 60
+  max_retries: 4
+  max_backoff_seconds: 120
+spatial_analysis:
+  analysis_crs: EPSG:6933
+  cell_size_m: 250
+  max_grid_cells: 500000
+  output_directory: data/processed/cell_statistics

@@ -1,0 +1,547 @@
+{
+  "dataset": "ECOSTRESS",
+  "generated_at": "2026-11-09T10:15:32.864129+00:00",
+  "status": "available",
+  "requested_product_ids": [
+    "ECO_L2T_LSTE.002",
+    "ECO_L3T_ET_ALEXI.002"
+  ],
+  "reason": null,
+  "missing_requested_product_ids": [],
+  "available_products": [
+    {
+      "catalog": {
+        "Product": "ECO_L2T_LSTE",
+        "Platform": "ECOSTRESS",
+        "Description": "Tiled Land Surface Temperature and Emissivity",
+        "RasterType": "Tile",
+        "Resolution": "70m",
+        "TemporalGranularity": "ISS-dependent",
+        "Version": "002",
+        "Available": true,
+        "DocLink": "https://dx.doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.002",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2018-07-09",
+        "TemporalExtentEnd": "Present",
+        "Deleted": false,
+        "DOI": "10.5067/ECOSTRESS/ECO_L2T_LSTE.002",
+        "Info": {
+          "provider_id": "lp_prod",
+          "is_utm_zonal": true,
+          "extension": "tif",
+          "cmr_date_parse": "datetime"
+        },
+        "ProductAndVersion": "ECO_L2T_LSTE.002"
+      },
+      "layers": {
+        "EmisWB": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Wide Band Emissivity",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "EmisWB",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['QC','cloud']",
+          "QualityProductAndVersion": "ECO_L2T_LSTE.002",
+          "ScaleFactor": 1,
+          "Units": "",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "LST": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Land Surface Temperature",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LST",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['QC','cloud']",
+          "QualityProductAndVersion": "ECO_L2T_LSTE.002",
+          "ScaleFactor": 1,
+          "Units": "Kelvin",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "LST_err": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Land Surface Temperature error",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LST_err",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "Kelvin",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "QC": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "uint16",
+          "Description": "Quality Control for LST and emissivity",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": null,
+          "FillValueAll": [
+            null
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "QC",
+          "OrigDataType": "uint16",
+          "OrigValidMax": 65535.0,
+          "OrigValidMin": 0.0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "",
+          "ValidMax": 65535.0,
+          "ValidMin": 0.0,
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "cloud": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "uint8",
+          "Description": "Cloud Mask",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "cloud",
+          "OrigDataType": "uint8",
+          "OrigValidMax": 1.0,
+          "OrigValidMin": 0.0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "1 = Cloud",
+          "ValidMax": 1.0,
+          "ValidMin": 0.0,
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "height": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "height",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "height",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "meters",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "water": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "uint8",
+          "Description": "Water Mask",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "water",
+          "OrigDataType": "uint8",
+          "OrigValidMax": 1.0,
+          "OrigValidMin": 0.0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "1 = Water",
+          "ValidMax": 1.0,
+          "ValidMin": 0.0,
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      }
+    },
+    {
+      "catalog": {
+        "Product": "ECO_L3T_ET_ALEXI",
+        "Platform": "ECOSTRESS",
+        "Description": "Evapotranspiration dis-ALEXI-JPL",
+        "RasterType": "Tile",
+        "Resolution": "70m",
+        "TemporalGranularity": "ISS-dependent",
+        "Version": "002",
+        "Available": true,
+        "DocLink": "https://doi.org/10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2018-07-15",
+        "TemporalExtentEnd": "Present",
+        "Deleted": false,
+        "DOI": "10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002",
+        "Info": {
+          "provider_id": "lp_prod",
+          "is_utm_zonal": true,
+          "extension": "tif",
+          "cmr_date_parse": "datetime"
+        },
+        "ProductAndVersion": "ECO_L3T_ET_ALEXI.002"
+      },
+      "layers": {
+        "ETdaily": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdaily",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        "ETdailyUncertainty": {
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily Uncertainty",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdailyUncertainty",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      }
+    }
+  ],
+  "alternative_products_not_substituted": [],
+  "layer_checks": [],
+  "discovered_layer_categories": {
+    "ECO_L2T_LSTE.002": {
+      "temperature_candidates": [
+        {
+          "layer_id": "LST",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Land Surface Temperature",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LST",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['QC','cloud']",
+          "QualityProductAndVersion": "ECO_L2T_LSTE.002",
+          "ScaleFactor": 1,
+          "Units": "Kelvin",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        {
+          "layer_id": "LST_err",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Land Surface Temperature error",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LST_err",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "Kelvin",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      ],
+      "emissivity_candidates": [
+        {
+          "layer_id": "EmisWB",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Wide Band Emissivity",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "EmisWB",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "['QC','cloud']",
+          "QualityProductAndVersion": "ECO_L2T_LSTE.002",
+          "ScaleFactor": 1,
+          "Units": "",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      ],
+      "evapotranspiration_candidates": [],
+      "quality_flag_candidates": [
+        {
+          "layer_id": "QC",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "uint16",
+          "Description": "Quality Control for LST and emissivity",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": null,
+          "FillValueAll": [
+            null
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "QC",
+          "OrigDataType": "uint16",
+          "OrigValidMax": 65535.0,
+          "OrigValidMin": 0.0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "",
+          "ValidMax": 65535.0,
+          "ValidMin": 0.0,
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      ],
+      "water_use_efficiency_candidates": [],
+      "evaporative_stress_index_candidates": []
+    },
+    "ECO_L3T_ET_ALEXI.002": {
+      "temperature_candidates": [],
+      "emissivity_candidates": [],
+      "evapotranspiration_candidates": [
+        {
+          "layer_id": "ETdaily",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdaily",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        },
+        {
+          "layer_id": "ETdailyUncertainty",
+          "AddOffset": 0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Evapotranspiration Daily Uncertainty",
+          "Dimensions": [
+            "time",
+            "y",
+            "x"
+          ],
+          "FillValue": "NaN",
+          "FillValueAll": [
+            "NaN"
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "ETdailyUncertainty",
+          "OrigDataType": "float32",
+          "OrigValidMax": "",
+          "OrigValidMin": "",
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": 1,
+          "Units": "mm/day",
+          "ValidMax": "",
+          "ValidMin": "",
+          "XSize": 1568,
+          "YSize": 1568
+        }
+      ],
+      "quality_flag_candidates": [],
+      "water_use_efficiency_candidates": [],
+      "evaporative_stress_index_candidates": []
+    }
+  }
+}

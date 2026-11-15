@@ -1,0 +1,378 @@
+{
+  "dataset": "MCD15A3H",
+  "generated_at": "2026-11-09T10:15:29.850819+00:00",
+  "status": "available",
+  "requested_product_ids": [
+    "MCD15A3H.061"
+  ],
+  "reason": null,
+  "missing_requested_product_ids": [],
+  "available_products": [
+    {
+      "catalog": {
+        "Product": "MCD15A3H",
+        "Platform": "Combined MODIS",
+        "Description": "Leaf Area Index (LAI) and Fraction of Photosynthetically Active Radiation (FPAR)",
+        "RasterType": "Tile",
+        "Resolution": "500m",
+        "TemporalGranularity": "4 day",
+        "Version": "061",
+        "Available": true,
+        "DocLink": "https://doi.org/10.5067/MODIS/MCD15A3H.061",
+        "Source": "LP DAAC",
+        "TemporalExtentStart": "2002-07-04",
+        "TemporalExtentEnd": "Present",
+        "Deleted": false,
+        "DOI": "10.5067/MODIS/MCD15A3H.061",
+        "Info": {
+          "collection_concept_id": "C2343110937-LPCLOUD",
+          "provider_id": "lp_prod"
+        },
+        "ProductAndVersion": "MCD15A3H.061"
+      },
+      "layers": {
+        "FparExtra_QC": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "byte",
+          "Description": "Extra detail Quality for Lai and Fpar",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "FparExtra_QC",
+          "OrigDataType": "byte",
+          "OrigValidMax": 254,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "class-flag",
+          "ValidMax": 254.0,
+          "ValidMin": 0.0,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "FparLai_QC": {
+          "AddOffset": "",
+          "Available": true,
+          "DataType": "byte",
+          "Description": "Quality for Lai and Fpar",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": true,
+          "Layer": "FparLai_QC",
+          "OrigDataType": "byte",
+          "OrigValidMax": 254,
+          "OrigValidMin": 0,
+          "QualityLayers": "",
+          "QualityProductAndVersion": "",
+          "ScaleFactor": "",
+          "Units": "class-flag",
+          "ValidMax": 254.0,
+          "ValidMin": 0.0,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "FparStdDev_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Standard deviation of Fpar",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "FparStdDev_500m",
+          "OrigDataType": "byte",
+          "OrigValidMax": 100,
+          "OrigValidMin": 0,
+          "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+          "QualityProductAndVersion": "MCD15A3H.061",
+          "ScaleFactor": 0.01,
+          "Units": "Percent",
+          "ValidMax": 1.0,
+          "ValidMin": 0.0,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "Fpar_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Fraction of photosynthetically active radiation",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Fpar_500m",
+          "OrigDataType": "byte",
+          "OrigValidMax": 100,
+          "OrigValidMin": 0,
+          "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+          "QualityProductAndVersion": "MCD15A3H.061",
+          "ScaleFactor": 0.01,
+          "Units": "Percent",
+          "ValidMax": 1.0,
+          "ValidMin": 0.0,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "LaiStdDev_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Standard deviation of Lai",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "LaiStdDev_500m",
+          "OrigDataType": "byte",
+          "OrigValidMax": 100,
+          "OrigValidMin": 0,
+          "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+          "QualityProductAndVersion": "MCD15A3H.061",
+          "ScaleFactor": 0.1,
+          "Units": "m^2/m^2",
+          "ValidMax": 10.0,
+          "ValidMin": 0.0,
+          "XSize": 2400,
+          "YSize": 2400
+        },
+        "Lai_500m": {
+          "AddOffset": 0.0,
+          "Available": true,
+          "DataType": "float32",
+          "Description": "Leaf area index",
+          "Dimensions": [
+            "time",
+            "YDim",
+            "XDim"
+          ],
+          "FillValue": 255,
+          "FillValueAll": [
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255
+          ],
+          "Group": "",
+          "Info": {},
+          "IsQA": false,
+          "Layer": "Lai_500m",
+          "OrigDataType": "byte",
+          "OrigValidMax": 100,
+          "OrigValidMin": 0,
+          "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+          "QualityProductAndVersion": "MCD15A3H.061",
+          "ScaleFactor": 0.1,
+          "Units": "m^2/m^2",
+          "ValidMax": 10.0,
+          "ValidMin": 0.0,
+          "XSize": 2400,
+          "YSize": 2400
+        }
+      }
+    }
+  ],
+  "alternative_products_not_substituted": [],
+  "layer_checks": [
+    {
+      "product_id": "MCD15A3H.061",
+      "checks": [
+        {
+          "requested_layer": "LAI",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "Lai_500m",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Leaf area index",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 255,
+              "FillValueAll": [
+                249,
+                250,
+                251,
+                252,
+                253,
+                254,
+                255
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "Lai_500m",
+              "OrigDataType": "byte",
+              "OrigValidMax": 100,
+              "OrigValidMin": 0,
+              "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+              "QualityProductAndVersion": "MCD15A3H.061",
+              "ScaleFactor": 0.1,
+              "Units": "m^2/m^2",
+              "ValidMax": 10.0,
+              "ValidMin": 0.0,
+              "XSize": 2400,
+              "YSize": 2400
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "FPAR",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "Fpar_500m",
+              "AddOffset": 0.0,
+              "Available": true,
+              "DataType": "float32",
+              "Description": "Fraction of photosynthetically active radiation",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 255,
+              "FillValueAll": [
+                249,
+                250,
+                251,
+                252,
+                253,
+                254,
+                255
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": false,
+              "Layer": "Fpar_500m",
+              "OrigDataType": "byte",
+              "OrigValidMax": 100,
+              "OrigValidMin": 0,
+              "QualityLayers": "['FparLai_QC', 'FparExtra_QC']",
+              "QualityProductAndVersion": "MCD15A3H.061",
+              "ScaleFactor": 0.01,
+              "Units": "Percent",
+              "ValidMax": 1.0,
+              "ValidMin": 0.0,
+              "XSize": 2400,
+              "YSize": 2400
+            }
+          ],
+          "reason": null
+        },
+        {
+          "requested_layer": "FparLai_QC",
+          "status": "available",
+          "matched_layers": [
+            {
+              "layer_id": "FparLai_QC",
+              "AddOffset": "",
+              "Available": true,
+              "DataType": "byte",
+              "Description": "Quality for Lai and Fpar",
+              "Dimensions": [
+                "time",
+                "YDim",
+                "XDim"
+              ],
+              "FillValue": 255,
+              "FillValueAll": [
+                255
+              ],
+              "Group": "",
+              "Info": {},
+              "IsQA": true,
+              "Layer": "FparLai_QC",
+              "OrigDataType": "byte",
+              "OrigValidMax": 254,
+              "OrigValidMin": 0,
+              "QualityLayers": "",
+              "QualityProductAndVersion": "",
+              "ScaleFactor": "",
+              "Units": "class-flag",
+              "ValidMax": 254.0,
+              "ValidMin": 0.0,
+              "XSize": 2400,
+              "YSize": 2400
+            }
+          ],
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "discovered_layer_categories": {}
+}

@@ -1,0 +1,834 @@
+{
+  "generated_at": "2026-11-10T14:52:32.657452+00:00",
+  "data_directory": "/home/max-s/programming/space/data",
+  "task_manifests": [
+    {
+      "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491",
+      "product_id": "MOD13Q1.061",
+      "requested_layers": [
+        "_250m_16_days_NDVI"
+      ],
+      "start_date": "2025-07-01",
+      "end_date": "2025-07-16",
+      "task_status": "completed",
+      "download_status": "completed",
+      "download_count": 11
+    }
+  ],
+  "file_count": 11,
+  "valid_file_count": 10,
+  "invalid_file_count": 1,
+  "missing_file_count": 0,
+  "datasets": [
+    {
+      "product_id": "MOD13Q1.061",
+      "product_name": "MOD13Q1",
+      "metadata_file": "/home/max-s/programming/space/data/metadata/MOD13Q1.json",
+      "availability": {
+        "dataset": "MOD13Q1",
+        "status": "available"
+      },
+      "layers": [
+        {
+          "layer_id": "_250m_16_days_NDVI",
+          "metadata": {
+            "AddOffset": 0.0,
+            "Available": true,
+            "DataType": "float32",
+            "Description": "16 day NDVI average",
+            "Dimensions": [
+              "time",
+              "YDim",
+              "XDim"
+            ],
+            "FillValue": -3000,
+            "FillValueAll": [
+              -3000
+            ],
+            "Group": "",
+            "Info": {},
+            "IsQA": false,
+            "Layer": "_250m_16_days_NDVI",
+            "OrigDataType": "int16",
+            "OrigValidMax": 10000,
+            "OrigValidMin": -2000,
+            "QualityLayers": "['_250m_16_days_VI_Quality']",
+            "QualityProductAndVersion": "MOD13Q1.061",
+            "ScaleFactor": 0.0001,
+            "Units": "NDVI",
+            "ValidMax": 1.0,
+            "ValidMin": -0.200000003,
+            "XSize": 4800,
+            "YSize": 4800
+          },
+          "file_count": 2,
+          "acquisition_dates": [
+            "2025-06-26",
+            "2025-07-12"
+          ]
+        },
+        {
+          "layer_id": "_250m_16_days_VI_Quality",
+          "metadata": {
+            "AddOffset": "",
+            "Available": true,
+            "DataType": "uint16",
+            "Description": "250m 16 days VI Quality",
+            "Dimensions": [
+              "time",
+              "YDim",
+              "XDim"
+            ],
+            "FillValue": 65535,
+            "FillValueAll": [
+              65535
+            ],
+            "Group": "",
+            "Info": {},
+            "IsQA": true,
+            "Layer": "_250m_16_days_VI_Quality",
+            "OrigDataType": "uint16",
+            "OrigValidMax": 65534,
+            "OrigValidMin": 0,
+            "QualityLayers": "",
+            "QualityProductAndVersion": "",
+            "ScaleFactor": "",
+            "Units": "",
+            "ValidMax": 65534.0,
+            "ValidMin": 0.0,
+            "XSize": 4800,
+            "YSize": 4800
+          },
+          "file_count": 2,
+          "acquisition_dates": [
+            "2025-06-26",
+            "2025-07-12"
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "data/raw/MODIS/MOD13Q1/MOD13Q1-061-250m-16-days-VI-Quality-Statistics-QA.csv",
+          "file_name": "MOD13Q1-061-250m-16-days-VI-Quality-Statistics-QA.csv",
+          "format": "csv",
+          "size_bytes": 189,
+          "product_id": "MOD13Q1.061",
+          "layer_id": null,
+          "acquisition_date": null,
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "7c83722e996f0d92cb0457062d581bb5ea82421fb7b2cba70625063864478da6",
+            "format_valid": true
+          },
+          "content": {
+            "parse_valid": true,
+            "kind": "csv",
+            "columns": [
+              "File",
+              "aid",
+              "Date",
+              "2116"
+            ],
+            "data_row_count": 2
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/MOD13Q1-061-250m-16-days-VI-Quality-lookup.csv",
+          "file_name": "MOD13Q1-061-250m-16-days-VI-Quality-lookup.csv",
+          "format": "csv",
+          "size_bytes": 256,
+          "product_id": "MOD13Q1.061",
+          "layer_id": null,
+          "acquisition_date": null,
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "8ae9ec9debef2d3eb8cadbf6809b1c3ee14389b85848987a15d5b574a8287d25",
+            "format_valid": true
+          },
+          "content": {
+            "parse_valid": true,
+            "kind": "csv",
+            "columns": [
+              "Value",
+              "MODLAND",
+              "VI Usefulness",
+              "Aerosol Quantity",
+              "Adjacent cloud detected",
+              "Atmosphere BRDF Correction",
+              "Mixed Clouds",
+              "Land/Water Mask",
+              "Possible snow/ice",
+              "Possible shadow"
+            ],
+            "data_row_count": 1
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/MOD13Q1-061-Statistics.csv",
+          "file_name": "MOD13Q1-061-Statistics.csv",
+          "format": "csv",
+          "size_bytes": 511,
+          "product_id": "MOD13Q1.061",
+          "layer_id": null,
+          "acquisition_date": null,
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "9f44fe5b60a1d0aeda5befbecc3047e87322cf739499052b21887722d12b389a",
+            "format_valid": true
+          },
+          "content": {
+            "parse_valid": true,
+            "kind": "csv",
+            "columns": [
+              "File Name",
+              "Dataset",
+              "aid",
+              "Date",
+              "Count",
+              "Minimum",
+              "Maximum",
+              "Range",
+              "Mean",
+              "Standard Deviation",
+              "Variance",
+              "Upper Quartile",
+              "Upper 1.5 IQR",
+              "Median",
+              "Lower 1.5 IQR",
+              "Lower Quartile"
+            ],
+            "data_row_count": 2
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/MOD13Q1.061_2025167_to_2025197/MOD13Q1.061__250m_16_days_NDVI_20250626T000000_aid0001.tif",
+          "file_name": "MOD13Q1.061__250m_16_days_NDVI_20250626T000000_aid0001.tif",
+          "format": "tif",
+          "size_bytes": 2370,
+          "product_id": "MOD13Q1.061",
+          "layer_id": "_250m_16_days_NDVI",
+          "acquisition_date": "2025-06-26",
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "858c1b89fb9425fa819dfe117dd1fff463ed78331bf894bd4bb008a1d0226357",
+            "format_valid": true
+          },
+          "raster": {
+            "driver": "GTiff",
+            "width": 1,
+            "height": 1,
+            "band_count": 1,
+            "dtypes": [
+              "int16"
+            ],
+            "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "crs_label": "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +R=6371007.181 +units=m +no_defs=True",
+            "crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "bounds": [
+              5786312.516680725,
+              4593513.927987112,
+              5786544.173038987,
+              4593745.584345374
+            ],
+            "transform": [
+              231.6563582625,
+              0.0,
+              5786312.516680725,
+              0.0,
+              -231.6563582625,
+              4593745.584345374,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution": [
+              231.6563582625,
+              231.6563582625
+            ],
+            "nodata": -3000.0,
+            "scales": [
+              0.0001
+            ],
+            "offsets": [
+              0.0
+            ],
+            "units": [
+              null
+            ],
+            "band_descriptions": [
+              null
+            ],
+            "tags": {
+              "add_offset": "0.0",
+              "scale_factor": "0.0001",
+              "units": "NDVI",
+              "AREA_OR_POINT": "Area"
+            },
+            "valid_pixel_count": 1,
+            "masked_pixel_count": 0
+          },
+          "product_layer_metadata": {
+            "AddOffset": 0.0,
+            "Available": true,
+            "DataType": "float32",
+            "Description": "16 day NDVI average",
+            "Dimensions": [
+              "time",
+              "YDim",
+              "XDim"
+            ],
+            "FillValue": -3000,
+            "FillValueAll": [
+              -3000
+            ],
+            "Group": "",
+            "Info": {},
+            "IsQA": false,
+            "Layer": "_250m_16_days_NDVI",
+            "OrigDataType": "int16",
+            "OrigValidMax": 10000,
+            "OrigValidMin": -2000,
+            "QualityLayers": "['_250m_16_days_VI_Quality']",
+            "QualityProductAndVersion": "MOD13Q1.061",
+            "ScaleFactor": 0.0001,
+            "Units": "NDVI",
+            "ValidMax": 1.0,
+            "ValidMin": -0.200000003,
+            "XSize": 4800,
+            "YSize": 4800
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/MOD13Q1.061_2025167_to_2025197/MOD13Q1.061__250m_16_days_NDVI_20250712T000000_aid0001.tif",
+          "file_name": "MOD13Q1.061__250m_16_days_NDVI_20250712T000000_aid0001.tif",
+          "format": "tif",
+          "size_bytes": 2370,
+          "product_id": "MOD13Q1.061",
+          "layer_id": "_250m_16_days_NDVI",
+          "acquisition_date": "2025-07-12",
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "80acf5150cdc71e1186efa2f71a1946fbee652e855e84f4e770542caf1243a48",
+            "format_valid": true
+          },
+          "raster": {
+            "driver": "GTiff",
+            "width": 1,
+            "height": 1,
+            "band_count": 1,
+            "dtypes": [
+              "int16"
+            ],
+            "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "crs_label": "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +R=6371007.181 +units=m +no_defs=True",
+            "crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "bounds": [
+              5786312.516680725,
+              4593513.927987112,
+              5786544.173038987,
+              4593745.584345374
+            ],
+            "transform": [
+              231.6563582625,
+              0.0,
+              5786312.516680725,
+              0.0,
+              -231.6563582625,
+              4593745.584345374,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution": [
+              231.6563582625,
+              231.6563582625
+            ],
+            "nodata": -3000.0,
+            "scales": [
+              0.0001
+            ],
+            "offsets": [
+              0.0
+            ],
+            "units": [
+              null
+            ],
+            "band_descriptions": [
+              null
+            ],
+            "tags": {
+              "add_offset": "0.0",
+              "scale_factor": "0.0001",
+              "units": "NDVI",
+              "AREA_OR_POINT": "Area"
+            },
+            "valid_pixel_count": 1,
+            "masked_pixel_count": 0
+          },
+          "product_layer_metadata": {
+            "AddOffset": 0.0,
+            "Available": true,
+            "DataType": "float32",
+            "Description": "16 day NDVI average",
+            "Dimensions": [
+              "time",
+              "YDim",
+              "XDim"
+            ],
+            "FillValue": -3000,
+            "FillValueAll": [
+              -3000
+            ],
+            "Group": "",
+            "Info": {},
+            "IsQA": false,
+            "Layer": "_250m_16_days_NDVI",
+            "OrigDataType": "int16",
+            "OrigValidMax": 10000,
+            "OrigValidMin": -2000,
+            "QualityLayers": "['_250m_16_days_VI_Quality']",
+            "QualityProductAndVersion": "MOD13Q1.061",
+            "ScaleFactor": 0.0001,
+            "Units": "NDVI",
+            "ValidMax": 1.0,
+            "ValidMin": -0.200000003,
+            "XSize": 4800,
+            "YSize": 4800
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/MOD13Q1.061_2025167_to_2025197/MOD13Q1.061__250m_16_days_VI_Quality_20250626T000000_aid0001.tif",
+          "file_name": "MOD13Q1.061__250m_16_days_VI_Quality_20250626T000000_aid0001.tif",
+          "format": "tif",
+          "size_bytes": 2230,
+          "product_id": "MOD13Q1.061",
+          "layer_id": "_250m_16_days_VI_Quality",
+          "acquisition_date": "2025-06-26",
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "939ab281ac8a2bf379c4daf3f57621684cc73da5f58d1cc4f0ab4254f8438bfe",
+            "format_valid": true
+          },
+          "raster": {
+            "driver": "GTiff",
+            "width": 1,
+            "height": 1,
+            "band_count": 1,
+            "dtypes": [
+              "uint16"
+            ],
+            "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "crs_label": "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +R=6371007.181 +units=m +no_defs=True",
+            "crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "bounds": [
+              5786312.516680725,
+              4593513.927987112,
+              5786544.173038987,
+              4593745.584345374
+            ],
+            "transform": [
+              231.6563582625,
+              0.0,
+              5786312.516680725,
+              0.0,
+              -231.6563582625,
+              4593745.584345374,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution": [
+              231.6563582625,
+              231.6563582625
+            ],
+            "nodata": 65535.0,
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "units": [
+              null
+            ],
+            "band_descriptions": [
+              null
+            ],
+            "tags": {
+              "add_offset": "0",
+              "scale_factor": "1",
+              "units": "NA",
+              "AREA_OR_POINT": "Area"
+            },
+            "valid_pixel_count": 1,
+            "masked_pixel_count": 0
+          },
+          "product_layer_metadata": {
+            "AddOffset": "",
+            "Available": true,
+            "DataType": "uint16",
+            "Description": "250m 16 days VI Quality",
+            "Dimensions": [
+              "time",
+              "YDim",
+              "XDim"
+            ],
+            "FillValue": 65535,
+            "FillValueAll": [
+              65535
+            ],
+            "Group": "",
+            "Info": {},
+            "IsQA": true,
+            "Layer": "_250m_16_days_VI_Quality",
+            "OrigDataType": "uint16",
+            "OrigValidMax": 65534,
+            "OrigValidMin": 0,
+            "QualityLayers": "",
+            "QualityProductAndVersion": "",
+            "ScaleFactor": "",
+            "Units": "",
+            "ValidMax": 65534.0,
+            "ValidMin": 0.0,
+            "XSize": 4800,
+            "YSize": 4800
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/MOD13Q1.061_2025167_to_2025197/MOD13Q1.061__250m_16_days_VI_Quality_20250712T000000_aid0001.tif",
+          "file_name": "MOD13Q1.061__250m_16_days_VI_Quality_20250712T000000_aid0001.tif",
+          "format": "tif",
+          "size_bytes": 2230,
+          "product_id": "MOD13Q1.061",
+          "layer_id": "_250m_16_days_VI_Quality",
+          "acquisition_date": "2025-07-12",
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "939ab281ac8a2bf379c4daf3f57621684cc73da5f58d1cc4f0ab4254f8438bfe",
+            "format_valid": true
+          },
+          "raster": {
+            "driver": "GTiff",
+            "width": 1,
+            "height": 1,
+            "band_count": 1,
+            "dtypes": [
+              "uint16"
+            ],
+            "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "crs_label": "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +R=6371007.181 +units=m +no_defs=True",
+            "crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+            "bounds": [
+              5786312.516680725,
+              4593513.927987112,
+              5786544.173038987,
+              4593745.584345374
+            ],
+            "transform": [
+              231.6563582625,
+              0.0,
+              5786312.516680725,
+              0.0,
+              -231.6563582625,
+              4593745.584345374,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "resolution": [
+              231.6563582625,
+              231.6563582625
+            ],
+            "nodata": 65535.0,
+            "scales": [
+              1.0
+            ],
+            "offsets": [
+              0.0
+            ],
+            "units": [
+              null
+            ],
+            "band_descriptions": [
+              null
+            ],
+            "tags": {
+              "add_offset": "0",
+              "scale_factor": "1",
+              "units": "NA",
+              "AREA_OR_POINT": "Area"
+            },
+            "valid_pixel_count": 1,
+            "masked_pixel_count": 0
+          },
+          "product_layer_metadata": {
+            "AddOffset": "",
+            "Available": true,
+            "DataType": "uint16",
+            "Description": "250m 16 days VI Quality",
+            "Dimensions": [
+              "time",
+              "YDim",
+              "XDim"
+            ],
+            "FillValue": 65535,
+            "FillValueAll": [
+              65535
+            ],
+            "Group": "",
+            "Info": {},
+            "IsQA": true,
+            "Layer": "_250m_16_days_VI_Quality",
+            "OrigDataType": "uint16",
+            "OrigValidMax": 65534,
+            "OrigValidMin": 0,
+            "QualityLayers": "",
+            "QualityProductAndVersion": "",
+            "ScaleFactor": "",
+            "Units": "",
+            "ValidMax": 65534.0,
+            "ValidMin": 0.0,
+            "XSize": 4800,
+            "YSize": 4800
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/README.md",
+          "file_name": "README.md",
+          "format": "md",
+          "size_bytes": 39672,
+          "product_id": "MOD13Q1.061",
+          "layer_id": null,
+          "acquisition_date": null,
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "cbbf95488867c12c5e8976c78ed486c37397df8383c8a61d37aada817c585cad",
+            "format_valid": true
+          },
+          "content": {
+            "parse_valid": true,
+            "kind": "text",
+            "first_line": "# AppEEARS Area Sample Extraction Readme"
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/Uzbekistan-MOD13Q1-NDVI-test-MOD13Q1-061-metadata.xml",
+          "file_name": "Uzbekistan-MOD13Q1-NDVI-test-MOD13Q1-061-metadata.xml",
+          "format": "xml",
+          "size_bytes": 22038,
+          "product_id": "MOD13Q1.061",
+          "layer_id": null,
+          "acquisition_date": null,
+          "validation": {
+            "valid": false,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [
+              "not well-formed (invalid token): line 197, column 59"
+            ],
+            "sha256": "8cad886bd92c790b6af65577de872a8596f4bcef30b7e4b9f4f52cd1de0fdbcb",
+            "format_valid": false
+          },
+          "content": {
+            "parse_valid": false,
+            "kind": "xml",
+            "error": "not well-formed (invalid token): line 197, column 59"
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/Uzbekistan-MOD13Q1-NDVI-test-granule-list.txt",
+          "file_name": "Uzbekistan-MOD13Q1-NDVI-test-granule-list.txt",
+          "format": "txt",
+          "size_bytes": 324,
+          "product_id": "MOD13Q1.061",
+          "layer_id": null,
+          "acquisition_date": null,
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "a9cf704b83a4bd807c8e1476844d2348dcd40fe09e4af2a0c0c9c60d4134b221",
+            "format_valid": true
+          },
+          "content": {
+            "parse_valid": true,
+            "kind": "text",
+            "first_line": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MOD13Q1.061/MOD13Q1.A2025177.h23v04.061.2025195141345/MOD13Q1.A2025177.h23v04.061.2025195141345.hdf"
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        },
+        {
+          "path": "data/raw/MODIS/MOD13Q1/Uzbekistan-MOD13Q1-NDVI-test-request.json",
+          "file_name": "Uzbekistan-MOD13Q1-NDVI-test-request.json",
+          "format": "json",
+          "size_bytes": 1066,
+          "product_id": "MOD13Q1.061",
+          "layer_id": null,
+          "acquisition_date": null,
+          "validation": {
+            "valid": true,
+            "integrity_valid": true,
+            "exists": true,
+            "manifest_status": "validated",
+            "errors": [],
+            "sha256": "97c6ac5628b8685ad4b556086e1d46e987038ceac426618883c4621293aa604b",
+            "format_valid": true
+          },
+          "content": {
+            "parse_valid": true,
+            "kind": "json"
+          },
+          "task_id": "4d12ee1d-df48-4bbb-9d38-1b8038dff491"
+        }
+      ]
+    }
+  ],
+  "unassociated_files": [],
+  "catalog_metadata": {
+    "available": true,
+    "generated_at": "2026-11-09T10:15:21.878890+00:00",
+    "catalog_product_count": 193,
+    "datasets": [
+      {
+        "dataset": "HLSL30",
+        "status": "available",
+        "available_product_ids": [
+          "HLSL30.020"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "HLSS30",
+        "status": "available",
+        "available_product_ids": [
+          "HLSS30.020"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "MOD13Q1",
+        "status": "available",
+        "available_product_ids": [
+          "MOD13Q1.061"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "MCD15A3H",
+        "status": "available",
+        "available_product_ids": [
+          "MCD15A3H.061"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "MOD11A2",
+        "status": "available",
+        "available_product_ids": [
+          "MOD11A2.061"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "MOD16A2GF",
+        "status": "available",
+        "available_product_ids": [
+          "MOD16A2GF.061"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "SMAP",
+        "status": "available",
+        "available_product_ids": [
+          "SPL3SMP_E.006",
+          "SPL3SMP.009"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "ECOSTRESS",
+        "status": "available",
+        "available_product_ids": [
+          "ECO_L2T_LSTE.002",
+          "ECO_L3T_ET_ALEXI.002"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "ECOSTRESS_ET_ALEXI",
+        "status": "available",
+        "available_product_ids": [
+          "ECO_L3T_ET_ALEXI.002"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "ASTER",
+        "status": "available",
+        "available_product_ids": [
+          "ASTGTM_NC.003"
+        ],
+        "reason": null
+      },
+      {
+        "dataset": "GPM",
+        "status": "unavailable",
+        "available_product_ids": [],
+        "reason": "No available product matched the configured AppEEARS product family."
+      },
+      {
+        "dataset": "MCD12Q1",
+        "status": "available",
+        "available_product_ids": [
+          "MCD12Q1.061"
+        ],
+        "reason": null
+      }
+    ]
+  }
+}
